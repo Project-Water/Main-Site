@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projector</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: HelveticaNeueCondensedBold;
+            src: url('../fonts/HelveticaNeueCondensedBold.eot');
+            src: url('../fonts/HelveticaNeueCondensedBold.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCondensedBold.woff') format('woff'), url('../fonts/HelveticaNeueCondensedBold.ttf') format('truetype'), url('../fonts/HelveticaNeueCondensedBold.svg#HelveticaNeueCondensedBold') format('svg');
+        }
+        
+        body,
+        html {
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            font-family: HelveticaNeueCondensedBold;
+        }
+        
+        #courtNum,
+        .subTitle,
+        #nowPlaying,
+        #nextNextUp,
+        #nextUp,
+        #winnerTitle,
+        #winner {
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .subTitle,
+        #winnerTitle,
+        #courtNum {
+            color: white;
+        }
+        
+        #nowPlaying,
+        #nextUp,
+        #nextNextUp,
+        #winner {
+            color: #74F530;
+        }
+        
+        h1 {
+            font-size: 80px;
+        }
+        
+        h2 {
+            font-size: 70px;
+        }
+        
+        #winner {
+            font-size: 120px;
+        }
+        
+        #flex-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+        }
+        
+        #glowLogo {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body id="bodyElement">
+    <div id="flex-group">
+        <div id="text-group">
+            <h1 id="courtNum"></h1>
+            <h3 class="subTitle">Now Playing</h3>
+            <h2 id="nowPlaying"></h2>
+            <h3 class="subTitle">Next Up</h3>
+            <h2 id="nextUp"></h2>
+            <h3 class="subTitle">Then</h3>
+            <h2 id="nextNextUp"></h2>
+            <h2 id="winnerTitle" style="display:none">WINNER</h2>
+            <h1 id="winner" style="display:none"></h1>
+        </div>
+    </div>
+
+    <img src="img/glow-logo.png" id="glowLogo" onclick="goFullScreen()">
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="codeModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Enter Code</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Code" id="codeBox">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="testCode()">Connect</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js" data-no-instant></script>
+    <script>
+        var code = "";
+        var debug = false;
+
+        function goFullScreen() {
+            var elem = document.getElementById("bodyElement");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            }
+        }
+
+        function testCode() {
+            code = $("#codeBox").val();
+            $.getJSON("projectorapi?code=" + code, function (data) {
+                if (data.hasOwnProperty("status")) {
+                    alert("Code invalid");
+                    return;
+                } else {
+                    updateDisplay();
+                    setInterval(updateDisplay, 1000);
+                    $('#codeModal').modal('hide');
+                    return;
+                }
+            });
+        }
+
+        function updateDisplay() {
+            $.getJSON("projectorapi?code=" + code, function (data) {
+                if (data.hasOwnProperty("winner") && data["winner"] != "") {
+                    //hide all of the other stuff and show the winner objects
+                    $("#nowPlaying").hide();
+                    $("#courtNum").hide();
+                    $(".subTitle").hide();
+                    $("#nextUp").hide();
+                    $("#nextNextUp").hide();
+                    $("#winnerTitle").show();
+                    $("#winner").show();
+                    $("#winner").text(data["winner"]);
+                }
+                var teams = data["teams"];
+                $("#courtNum").text(data["court"]);
+                for (var i = 0; i < teams.length; i++) {
+                    switch (i) {
+                    case 0:
+                        $("#nowPlaying").text(teams[i]);
+                        break;
+                    case 1:
+                        $("#nextUp").text(teams[i]);
+                        break;
+                    case 2:
+                        $("#nextNextUp").text(teams[i]);
+                        break;
+                    }
+                }
+
+
+                if (teams.length < 3) {
+                    $("#nextNextUp").text("");
+                    if (teams.length < 2) {
+                        $("#nextUp").text("");
+                        if (teams.length < 1)
+                            $("#nowPlaying").text("");
+                    }
+                }
+            })
+        }
+
+
+        $(function () {
+            if (!debug)
+                $('#codeModal').modal('show');
+            else {
+                $("#courtNum").text("Court 1");
+                $("#nowPlaying").text("Team 1");
+                $("#nextUp").text("Team 2");
+                $("#nextNextUp").text("Team 3");
+            }
+        });
+    </script>
+</body>
+
+</html>

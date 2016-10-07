@@ -1,0 +1,125 @@
+application: lunar-caster-87118
+version: 17
+runtime: php55
+api_version: 1
+module: default
+
+handlers:
+
+- url: /css
+  static_dir: css
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /json
+  static_dir: json
+
+- url: /pdf
+  static_dir: pdf
+  
+- url: /ckeditor
+  static_dir: ckeditor
+
+- url: /about
+  script: about.php
+
+- url: /events
+  script: events.php
+
+- url: /donate
+  script: donate.php
+
+- url: /sponsors
+  script: sponsors.php
+
+- url: /contact
+  script: contact.php
+
+- url: /credits
+  script: credits.php
+  
+- url: /team
+  script: team.php
+
+- url: /donate-cancel
+  script: donate-cancel.php
+
+- url: /dodgeball
+  script: dodgeball.php
+  
+- url: /videos
+  script: videos.php
+  
+- url: /donate-success
+  script: donate-success.php
+  
+- url: /parents
+  script: parents.php
+  
+- url: /parentaddemail
+  script: parentaddemail.php
+  
+- url: /freetickets
+  script: freetickets.php
+  
+- url: /teamsetup
+  script: teamsetup.php
+  login: admin
+  
+- url: /projectorapi
+  script: projectorapi.php
+  
+- url: /projector
+  script: projector.html
+  
+- url: /api
+  script: api.php
+  
+- url: /admin/*
+  script: admin.php
+  
+- url: /admin/administrators
+  script: administrators.php
+  
+- url: /admin/homeimages
+  script: homeimageeditor.php
+  
+- url: /admin/tournaments
+  script: tournaments.php
+  
+- url: /admin/videos
+  script: videoeditor.php
+  
+- url: /admin/goal
+  script: goal.php
+  
+- url: /admin/sponsors
+  script: sponsorseditor.php
+  
+- url: /admin/events
+  script: eventeditor.php
+  
+- url: /login
+  script: login.php
+
+- url: /
+  script: index.php
+
+- url: /index\.html
+  script: index.php
+  
+- url: /robots\.txt
+  script: robots.txt
+  
+- url: /sitemap\.xml
+  script: sitemap.php
+
+- url: /.*
+  script: notfound.php

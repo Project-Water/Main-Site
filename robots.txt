@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: 
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /freetickets
+Disallow: /pdf/
+
+User-Agent: Googlebot-Mobile
+Allow: /
+Disallow: /freetickets
+Disallow: /pdf/
+
+User-Agent: Googlebot-Image
+Disallow: /img
+
+Sitemap: https://naprojectwater.com/sitemap.xml

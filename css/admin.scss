@@ -1,0 +1,11 @@
+[class*='col-']{
+    text-align: center;
+    padding: 3px;
+}
+
+[class*='col-'] div{
+    border: 1px solid #3cf;
+    border-radius: 5px;
+    height:45px;
+}
+    

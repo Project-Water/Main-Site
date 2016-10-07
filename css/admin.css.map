@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "admin.css",
+  "sources": [
+    "admin.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";CAAc,AAAA,KAAC,EAAO,MAAM,AAAb,EAAA;EACX,UAAU,EAAE,MAAO;EACnB,OAAO,EAAE,GAAI,GAFD;;;CAKA,AAAA,KAAC,EAAO,MAAM,AAAb,EAAe,GAAG,CAAhB;EACf,MAAM,EAAE,cAAe;EACvB,aAAa,EAAE,GAAI;EACnB,MAAM,EAAC,IAAK,GAHI",
+  "names": []
+}

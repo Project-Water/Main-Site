@@ -1,0 +1,187 @@
+.fancyButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3cf;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 6px rgba(0, 0, 0, .7);
+    font-family: HelveticaNeueCondensedBold;
+    font-size: 17px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.fancyButton:active{
+	box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 2px rgba(0, 0, 0, .7);
+}
+
+#tournamentModal .modal-body{
+    text-align: center;
+}
+input[type=file] {
+    margin: 0 auto;
+    transform: translateX(40px)
+}
+
+.modernTable {
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.modernTable thead {
+    background: #3cf;
+}
+
+.modernTable thead tr th {
+    font-weight: bold;
+    padding: 12px 30px;
+    text-align: center;
+}
+
+.modernTable thead tr th span {
+    padding-right: 20px;
+    color: white;
+}
+
+.modernTable thead tr th.headerSortUp,
+#keywords thead tr th.headerSortDown {
+    background: #acc8dd;
+}
+
+.modernTable tbody tr {
+    color: #555;
+}
+
+.modernTable tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.modernTable tbody tr td.lalign {
+    text-align: left;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(51, 204, 255, 0.2);
+  border-right: 1.1em solid rgba(51, 204, 255, 0.2);
+  border-bottom: 1.1em solid rgba(51, 204, 255, 0.2);
+  border-left: 1.1em solid #3cf;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.fancyForm {
+    background-color: #F0F0F0;
+    padding-top: 0;
+    max-width: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fancyForm form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.fancyForm input[type=text] {
+    border: none;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.fancyForm input[type=text]:focus {
+    border-bottom: 1px solid #3cf;
+}
+
+.fancyForm input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3cf;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 6px rgba(0, 0, 0, .7);
+    font-family: HelveticaNeueCondensedBold;
+    font-size: 17px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.fancyForm input[type=submit]:active{
+	box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.formHeader {
+    background-color: #3CF;
+    font-family: HelveticaNeueCondensedBold;
+    color: white;
+    margin-top: -20px;
+    height: 60px;
+    text-align: center;
+}
+
+.formHeader h3 {
+    padding-top: 15px;
+}

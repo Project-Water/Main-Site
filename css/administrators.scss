@@ -1,0 +1,111 @@
+#adminTable {
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#adminTable thead {
+    background: #3cf;
+}
+
+#adminTable thead tr th {
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 42px;
+}
+
+#adminTable thead tr th span {
+    padding-right: 20px;
+    color: white;
+}
+
+#adminTable thead tr th.headerSortUp,
+#keywords thead tr th.headerSortDown {
+    background: #acc8dd;
+}
+
+#adminTable tbody tr {
+    color: #555;
+}
+
+#adminTable tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#adminTable tbody tr td.lalign {
+    text-align: left;
+}
+
+#userForm {
+    background-color: #F0F0F0;
+    padding-top: 0;
+    max-width: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userForm form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#userForm input[type=text] {
+    border: none;
+    border-bottom: 1px solid #4d4d4d;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#userForm input[type=text]:focus {
+    border-bottom: 1px solid #3cf;
+}
+
+#userForm input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3cf;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 6px rgba(0, 0, 0, .7);
+    font-family: HelveticaNeueCondensedBold;
+    font-size: 17px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#userForm input[type=submit]:active{
+	box-shadow: 0px 2px 0px rgb(51, 170, 255), 0px 2px 2px rgba(0, 0, 0, .7);
+}
+
+.formHeader {
+    background-color: #3CF;
+    font-family: HelveticaNeueCondensedBold;
+    color: white;
+    margin-top: -20px;
+    height: 60px;
+    text-align: center;
+}
+
+.formHeader h3 {
+    padding-top: 15px;
+}

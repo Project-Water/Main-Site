@@ -1,0 +1,45 @@
+<?php echo'<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://naprojectwater.com/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/about</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/register</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/videos</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/dodgeball</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/donate</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/sponsors</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/contact</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://naprojectwater.com/credits</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>';
+?>

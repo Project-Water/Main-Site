@@ -1,0 +1,4 @@
+cron:
+- description: refresh twitter cache
+  url: /team
+  schedule: every day 03:00
