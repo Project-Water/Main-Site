@@ -64,7 +64,7 @@ $emailMessage = $emailMessage . "<li>Corporate Sponsorship</li>";
 $emailMessage = $emailMessage . "</ul>";
 
 $emailMessage = $emailMessage . "&nbsp;&nbsp;&nbsp;&nbsp;";
-$emailMessage = $emailMessage . "As an organization, we will come alongside the students in a practical capacity. To that end, we plan to have 2-3 organizational meetings as we approach the date of the 2017 tournaments. Please click the link below to register with the PWPA. We look forward to meeting you and growing NA Project Water to reach beyond our community and into the world. Together, we can serve those in need with the strength and perseverance that comes from teamwork.";
+$emailMessage = $emailMessage . "As an organization, we will come alongside the students in a practical capacity. To that end, we plan to have 2-3 organizational meetings as we approach the April 13th, 2017 tournament date. Please click the link below to register with the PWPA. We look forward to meeting you and growing NA Project Water to reach beyond our community and into the world. Together, we can serve those in need with the strength and perseverance that comes from teamwork.";
 
 $emailMessage = $emailMessage . "<br><br>";
 $emailMessage = $emailMessage . "Link: <a href='http://goo.gl/forms/OOVHJQMNDf'>http://goo.gl/forms/OOVHJQMNDf</a>";
