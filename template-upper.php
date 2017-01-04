@@ -40,7 +40,7 @@ if($_SERVER[ 'REQUEST_URI']=="/"){
     <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/img/favicon/manifest.json">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#33ccff">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg">
     <link rel="shortcut icon" href="/img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#33ccff">
     <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png">
@@ -52,7 +52,7 @@ if($_SERVER[ 'REQUEST_URI']=="/"){
 
 <body>
     <div id="overlay"></div>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -93,4 +93,5 @@ if($_SERVER[ 'REQUEST_URI']=="/"){
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
    <?php if($_SERVER[ 'REQUEST_URI']!="/admin/tournaments" ){echo '<div class="container">';} else{echo '<div class="container-fluid tournamentContainer">';}?>

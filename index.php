@@ -23,7 +23,7 @@ usort($homeImages, "cmp");
                     for($i = 0; $i < $numSlides; $i++){
                         echo '<li data-target="#carousel-example-generic" data-slide-to="' . $i . '"';
                         if($i == 0)
-                            echo 'class="active"';
+                            echo ' class="active"';
                         echo '></li>';
                     }
                     ?>
@@ -36,7 +36,7 @@ usort($homeImages, "cmp");
                         echo '<div class="item';
                         if($i == 0)
                             echo ' active';
-                        echo '"><img src="' . $homeImages[$i]->URL . '"></div>';
+                        echo '"><img src="' . $homeImages[$i]->URL . '" alt="headerImage"></div>';
                     }
                     ?>
                 </div>
