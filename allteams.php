@@ -34,9 +34,7 @@ $teams = array(
             "Kristen Chomos" => 1066521937,
             "Grace Walsh" => "photo_template.jpg",
             "RJ Swanson" => "photo_template.jpg"
-        ),
-		"PW Players Union" => array()
-			
+        )			
 	),
 	
     "2015-2016 Teams" => array(
@@ -48,7 +46,7 @@ $teams = array(
         ),
         "NASH Dodgeball Board" => array(
             "Bailey Daftary" => "daftary_bailey.jpg",
-            "Brendan Grzyb" => 2405315112,
+            "Brendan Grzyb" => "photo_template.jpg",
             "Jacob Greco" => "greco_jacob.jpg",
             "Kevin Xu" => 2332523996,
             "CJ May" => 2902146421,
@@ -59,7 +57,7 @@ $teams = array(
             "Dave Bjorklund" => 2757838540
         ),
         "NAI Core Team" => array(
-            "Nikhil Behari" => "photo_template.jpg",
+            "Nikhil Behari" => 2402095411,
             "Hannah Glasser" => 1674638335,
             "Griffin McVay" => 2576757000, 
             "Margo Weller" => "weller_margo.jpg",
@@ -81,15 +79,14 @@ $teams = array(
         ),
         "NAI Dodgeball Board" => array(
             "Bailey Daftary" => "daftary_bailey.jpg",
-            "Brendan Grzyb" => 2405315112,
+            "Brendan Grzyb" => "photo_template.jpg",
             "Jacob Greco" => "greco_jacob.jpg",
             "Emilie Raymond" => 601340706,
             "Kevin Xu" => 2332523996
         )
     )
 );
-$ids = [2757838540, 1636704312, 1045293290, 1380804866, 2405315112, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 1674638335, 2576757000, 324719303, 40125872];
-
+$ids = [2757838540, 1636704312, 1045293290, 1380804866, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 1674638335, 2576757000, 324719303, 40125872, 2402095411, 902832746, 1066521937];
 //$twitterResults = performPost("https://api.twitter.com/1.1/users/lookup.json", array("user_id" => implode(",",user_id)));
 
 //url is string, data is array
