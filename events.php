@@ -8,7 +8,7 @@
         <br>
         <article class="dodgeBallArticle">
             The NASH dodgeball tournament will be held on March 23, 2016. Please <a href="dodgeball">click here</a> for more details.
-        </article>
+        </article> 
     </p><!--
     <br>
     <p>

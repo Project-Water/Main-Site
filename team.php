@@ -3,6 +3,7 @@
 //Twitter secret: ***REMOVED***
 
 $teams = array(
+	
     "2015-2016 Teams" => array(
         "NASH Core Team" => array(
             "Joshua Thomas" => 1380804866,
@@ -23,7 +24,7 @@ $teams = array(
             "Dave Bjorklund" => 2757838540
         ),
         "NAI Core Team" => array(
-            "Nikhil Behari" => 2402095411,
+            "Nikhil Behari" => "photo_template.jpg",
             "Hannah Glasser" => 1674638335,
             "Griffin McVay" => 2576757000, 
             "Margo Weller" => "weller_margo.jpg",
@@ -162,7 +163,7 @@ foreach($teams as $year=>$yearTeams){
                 echo str_replace("_normal", "", $twitterResults[getIDLocation($id)]["profile_image_url_https"]);
             else
                 echo 'img/team/' . $id;
-            echo '" style="border-radius:5px;"><div style="margin-top:-23px;">';
+            echo '" style="border-radius:5px;"><div style="margin-top:-15px;">';
             if(gettype($id) == "integer" || $intTest != 0)
                 echo '<a href="https://twitter.com/' . $twitterResults[getIDLocation($id)]["screen_name"] . '">' . $name . '</a>';
             else
