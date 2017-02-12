@@ -58,7 +58,7 @@ $sponsors = array(
         )
     ),
     "2015" => array(
-        "Sponsors" => array(
+        "All Sponsors" => array(
             new Sponsor("Pizza Hut", "http://www.pizzahut.com/", "pizza_hut.svg"),
             new Sponsor("Monte Cello's","http://www.montecellos.com/","monte_cello.png"),
             new Sponsor("Bellissimo's","http://www.gobellissimos.com/","bellissimo.png"),
@@ -81,15 +81,16 @@ $sponsors = array(
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;As with any large-scale event, Project Water needs sponsorships from local businesses who give back to their communities. As a sponsor, your logo will be on this page, and can be displayed at the upcoming dodgeball tournament. Any financial or product sponsorship helps. If you’d like to partner with us as North Allegheny works to provide African villages with clean water, please contact us at <a href="mailto:sponsor@naprojectwater.com">sponsor@naprojectwater.com</a>.
     </p>
-    <h2 class="sponsorsSubPage">Our Sponsors</h3>
     <div class="sponsors">
+		
 
         
         <?php
+			echo '<hr>';
             foreach($sponsors as $year=>$levels){
                 echo '<h2 class="text-center"><u>' . $year . '</u></h3>';
                 foreach($levels as $level=>$sponsorList){
-                    echo '<h3 class="text-center">' . $level . '</h2>';
+                    echo '<br><br><h3 class="text-center">' . $level . '</h2>';
                     $tempCounter = 1;
                     $totalIterations = 0;
                     foreach($sponsorList as $sponsor){

@@ -3,11 +3,11 @@
 <hr>
 <article class="subPageArticle registerArticle">
     <p>
-        <h2 class="subPageTitle">NASH Overnight Dodgeball Tournament</h2>
+        <h2 class="subPageTitle">NA Project Water Special Event</h2>
         <img src="img/ball.svg" alt="NJHS Dodgeball tournament" class="ballSVG">
         <br>
         <article class="dodgeBallArticle">
-            The NASH dodgeball tournament will be held on March 23, 2016. Please <a href="dodgeball">click here</a> for more details.
+            Please visit us in the NASH auditorium on April 13th, 2017, during <b>homeroom</b> for a special dodgeball announcement. 
         </article> 
     </p><!--
     <br>
