@@ -42,7 +42,12 @@ $(document).ready(function () {
                 temp += '<br><div class="calDateTime">Date TBA</div>';
             }
             else{
-            temp += '<br><div class="calDateTime">' + hour + ':' + date.getMinutes() + hourModifier + '</div>';
+                if (date.getMinutes() == 0){
+                    temp += '<br><div class="calDateTime">' + hour + ':00' + hourModifier + '</div>';
+                }
+                else{
+                    temp += '<br><div class="calDateTime">' + hour + ':' + date.getMinutes() + hourModifier + '</div>';
+                }
             }
             temp += '</div>';
             temp += '<div class="col-xs-8 calDetailsHolder">';
