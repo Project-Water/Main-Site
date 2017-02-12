@@ -1,15 +1,43 @@
-<!-- > 
-
-
-NOTE: THIS IS THE OLD TEAM PAGE> I WANT TO INCLUDE THIS IN A SMALLER "SEE PREVIOUS YEARS" SECTION
-		ON THE WEBSITE. PLEASE DO NOT DELETE.
-
-</!-->
 <?php
 //Twitter consumer key: ***REMOVED***
 //Twitter secret: ***REMOVED***
 
 $teams = array(
+	
+	"2016-2017 Teams" => array(
+		"NASH Leadership Team" => array(
+			"Joshua Thomas" => 1380804866,
+			"Nikhil Behari" => 2402095411,
+			"Shane Mitnick" => 324719303,
+			"Bailey Daftary" => "photo_template.jpg",
+			"Brendan Grzyb" => "photo_template.jpg",
+			"CJ May" => 2902146421,
+			"Danny Fujito" => 1024988798,
+			"Griffin McVay" => 2576757000,
+			"Hannah Glasser" => 1674638335,
+			"Jack Kenna" => 902832746,
+			"Jacob Greco" => "photo_template.jpg",
+			"Julie Chen" => 40125872,
+			"Kennedy Urban" => "photo_template.jpg",
+			"Kevin Xu" => 2332523996,
+			"Margo Weller" => "photo_template.jpg",
+			"MJ Barton" => 1045293290,
+			"Owen Leonard" => "photo_template.jpg",
+			"Zach Shuckrow" => "photo_template.jpg"
+		),
+        "NAI Leadership Team" => array(
+            "Andrew Ziegler" => "photo_template.jpg",
+            "Zach Trdinich" => "photo_template.jpg",
+            "Jack Leupenzenski" => "photo_template.jpg",
+            "Christopher Lee" => "photo_template.jpg",
+            "John Ehling" => "photo_template.jpg",
+            "Kristen Chomos" => 1066521937,
+            "Grace Walsh" => "photo_template.jpg",
+            "RJ Swanson" => "photo_template.jpg"
+        ),
+		"PW Players Union" => array()
+			
+	),
 	
     "2015-2016 Teams" => array(
         "NASH Core Team" => array(
@@ -148,7 +176,7 @@ function getIDLocation($id){
 include 'template-upper.php';
 ?>
 
-    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>Our Teams</h1>
+    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>All Teams</h1>
 
     <?php
 

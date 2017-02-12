@@ -47,6 +47,9 @@ handlers:
   
 - url: /team
   script: team.php
+  
+- url: /allteams
+  script: allteams.php
 
 - url: /donate-cancel
   script: donate-cancel.php
