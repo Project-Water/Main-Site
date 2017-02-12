@@ -33,7 +33,9 @@ $teams = array(
             "Kristen Chomos" => 1066521937,
             "Grace Walsh" => "photo_template.jpg",
             "RJ Swanson" => "photo_template.jpg"
-        )
+        ),
+		"PW Players Union" => array()
+			
 	)
 );
 $ids = [1380804866, 2402095411, 324719303, 2902146421, 1024988798, 2576757000, 1674638335, 902832746, 40125872, 2332523996, 1045293290, 1066521937];
@@ -133,6 +135,7 @@ $lastDidEnd = false;
 foreach($teams as $year=>$yearTeams){
     echo "<h2 style='text-align:center;text-decoration:underline'>" . $year . "</h2>";
     foreach($yearTeams as $teamName=>$people) {
+		echo "<br></br>";
         echo "<h3 style='text-align:center;'>" . $teamName . "</h3>";
         foreach($people as $name=>$id){
             if($counter == 0){
@@ -162,6 +165,9 @@ foreach($teams as $year=>$yearTeams){
             echo '</div>';
         $counter = 0;
     }
+	
+	echo "Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater";
+	
     echo "<hr>";
 }
 

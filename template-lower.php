@@ -1,21 +1,23 @@
 </div>
 <footer class="footer">
-    <div class="innerFooter"><span>Alex&nbsp;Taffe,&nbsp;Joshua&nbsp;Thomas,&nbsp;Shane&nbsp;Mitnick,&nbsp;Nikhil&nbsp;Behari</span><span>&copy;2015-<?php echo date("Y"); ?></span><span><a href="credits" class="creditsLink">Credits</a></span><span><a href="team" class="creditsLink">Our Team</a></span>
-        
-        <?php
-        
-        use google\appengine\api\users\User;
-        use google\appengine\api\users\UserService;
-        if (isset($_SESSION['Token']))
-        {
-            echo '<a href="' . UserService::createLogoutUrl('/') . '" class="creditsLink">Logout</a>';
-        }
-        else{
-            echo '<a href="login" class="creditsLink">Login</a>';
-        }
-        ?>
-    
-    </div>
+	<div style="position: relative;"class="innerFooter"><span><a href="credits" class="creditsLink">Credits</a></span><span><a href="team" class="creditsLink">Our Team</a></span>
+       
+       <?php
+       
+       use google\appengine\api\users\User;
+       use google\appengine\api\users\UserService;
+       if (isset($_SESSION['Token']))
+       {
+           echo '<a href="' . UserService::createLogoutUrl('/') . '" class="creditsLink">Logout</a>';
+       }
+       else{
+           echo '<a href="login" class="creditsLink">Login</a>';
+       }
+       ?>
+   
+   </div>
+    <div style="position: relative;"class="innerFooter"><span>Alex&nbsp;Taffe,&nbsp;Joshua&nbsp;Thomas,&nbsp;Shane&nbsp;Mitnick,&nbsp;Nikhil&nbsp;Behari</span><span>&copy;2015-<?php echo date("Y"); ?></span></div>
+
 </footer>
 <script src="/js/jquery-1.11.2.min.js"></script>
 <script src="/js/bootstrap.min.js" data-no-instant></script>
