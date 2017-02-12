@@ -5,13 +5,13 @@
     <div class="countDownContainer">
         <h2 class="countDownTitle">GET READY TO PLAY IN</h2>
         <div class="countDownNASH">
-
         </div>
         <div class='donateButton donateButtonInverted registerButtonNASH'>
             <a href='http://goo.gl/forms/PvmL1o8hBB' target='_blank'>
                 <div class='donateButtonText donateButtonTextInverted'>REGISTER</div>
             </a>
         </div>
+		
     </div>
     <br>
     <div class="embed-responsive embed-responsive-16by9 dodgeVideo">
