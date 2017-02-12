@@ -1,6 +1,6 @@
 </div>
 <footer class="footer">
-    <div class="innerFooter"><span>Alex&nbsp;Taffe,&nbsp;Joshua&nbsp;Thomas,&nbsp;Shane&nbsp;Mitnick</span><span>&copy;2015-<?php echo date("Y"); ?></span><span><a href="credits" class="creditsLink">Credits</a></span><span><a href="team" class="creditsLink">Our Team</a></span>
+    <div class="innerFooter"><span>Alex&nbsp;Taffe,&nbsp;Joshua&nbsp;Thomas,&nbsp;Shane&nbsp;Mitnick,&nbsp;Nikhil&nbsp;Behari</span><span>&copy;2015-<?php echo date("Y"); ?></span><span><a href="credits" class="creditsLink">Credits</a></span><span><a href="team" class="creditsLink">Our Team</a></span>
         
         <?php
         
