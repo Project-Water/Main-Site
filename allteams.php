@@ -3,40 +3,6 @@
 //Twitter secret: ***REMOVED***
 
 $teams = array(
-	
-	"2016-2017 Teams" => array(
-		"NASH Leadership Team" => array(
-			"Joshua Thomas" => 1380804866,
-			"Nikhil Behari" => 2402095411,
-			"Shane Mitnick" => 324719303,
-			"Bailey Daftary" => "photo_template.jpg",
-			"Brendan Grzyb" => "photo_template.jpg",
-			"CJ May" => 2902146421,
-			"Danny Fujito" => 1024988798,
-			"Griffin McVay" => 2576757000,
-			"Hannah Glasser" => 1674638335,
-			"Jack Kenna" => 902832746,
-			"Jacob Greco" => "photo_template.jpg",
-			"Julie Chen" => 40125872,
-			"Kennedy Urban" => "photo_template.jpg",
-			"Kevin Xu" => 2332523996,
-			"Margo Weller" => "photo_template.jpg",
-			"MJ Barton" => 1045293290,
-			"Owen Leonard" => "photo_template.jpg",
-			"Zach Shuckrow" => "photo_template.jpg"
-		),
-        "NAI Leadership Team" => array(
-            "Andrew Ziegler" => "photo_template.jpg",
-            "Zach Trdinich" => "photo_template.jpg",
-            "Jack Leupenzenski" => "photo_template.jpg",
-            "Christopher Lee" => "photo_template.jpg",
-            "John Ehling" => "photo_template.jpg",
-            "Kristen Chomos" => 1066521937,
-            "Grace Walsh" => "photo_template.jpg",
-            "RJ Swanson" => "photo_template.jpg"
-        )			
-	),
-	
     "2015-2016 Teams" => array(
         "NASH Core Team" => array(
             "Joshua Thomas" => 1380804866,
@@ -46,7 +12,7 @@ $teams = array(
         ),
         "NASH Dodgeball Board" => array(
             "Bailey Daftary" => "daftary_bailey.jpg",
-            "Brendan Grzyb" => "photo_template.jpg",
+            "Brendan Grzyb" => 2405315112,
             "Jacob Greco" => "greco_jacob.jpg",
             "Kevin Xu" => 2332523996,
             "CJ May" => 2902146421,
@@ -79,14 +45,15 @@ $teams = array(
         ),
         "NAI Dodgeball Board" => array(
             "Bailey Daftary" => "daftary_bailey.jpg",
-            "Brendan Grzyb" => "photo_template.jpg",
+            "Brendan Grzyb" => 2405315112,
             "Jacob Greco" => "greco_jacob.jpg",
             "Emilie Raymond" => 601340706,
             "Kevin Xu" => 2332523996
         )
     )
 );
-$ids = [2757838540, 1636704312, 1045293290, 1380804866, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 1674638335, 2576757000, 324719303, 40125872, 2402095411, 902832746, 1066521937];
+$ids = [2757838540, 1636704312, 1045293290, 1380804866, 2405315112, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 2402095411, 1674638335, 2576757000, 324719303, 40125872];
+
 //$twitterResults = performPost("https://api.twitter.com/1.1/users/lookup.json", array("user_id" => implode(",",user_id)));
 
 //url is string, data is array
@@ -173,7 +140,7 @@ function getIDLocation($id){
 include 'template-upper.php';
 ?>
 
-    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>All Teams</h1>
+    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>Our Teams</h1>
 
     <?php
 
@@ -195,7 +162,7 @@ foreach($teams as $year=>$yearTeams){
                 echo str_replace("_normal", "", $twitterResults[getIDLocation($id)]["profile_image_url_https"]);
             else
                 echo 'img/team/' . $id;
-            echo '" style="border-radius:5px;"><div style="margin-top:-15px;">';
+            echo '" style="border-radius:5px;"><div style="margin-top:-23px;">';
             if(gettype($id) == "integer" || $intTest != 0)
                 echo '<a href="https://twitter.com/' . $twitterResults[getIDLocation($id)]["screen_name"] . '">' . $name . '</a>';
             else
