@@ -13,6 +13,8 @@ $homeImages = $home_image_store->fetchAll();
 
 usort($homeImages, "cmp");
 ?>
+
+    <h4>Watch the live stream here at 8:10AM <a href="https://www.youtube.com/watch?v=QTLORsmfBhM">https://www.youtube.com/watch?v=QTLORsmfBhM</a></h4>
     <div class="row">
         <div class="col-md-12">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
