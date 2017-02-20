@@ -7,7 +7,7 @@
     <div class="countDownNASH">
     </div>
     <div class='donateButton donateButtonInverted registerButtonNASH'>
-        <a href='http://goo.gl/forms/PvmL1o8hBB' target='_blank'>
+        <a href='https://docs.google.com/forms/d/149Vaa1b-kFRfzUzKBfanNoe08bOyiDDrNF_kvgr5_P0' target='_blank'>
             <div class='donateButtonText donateButtonTextInverted'>REGISTER</div>
         </a>
     </div>
