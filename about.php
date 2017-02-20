@@ -4,7 +4,8 @@
 
     <article class="subPageArticle">
         <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;North Allegheny School District’s Project Water is an initiative originally launched by the National Junior Honors Society in 2014 to provide clean water to developing villages in Africa. Since then, it has become an independent organization focused on supplying developing nations with clean water. For every $15,000 we raise, a village in Africa is provided with a clean water well. To date, over <span id="amountRaised"></span> have been raised through our fundraising efforts. With support from our community, teachers, and peers, we know that united we will be able to make a difference.
+            &nbsp;&nbsp;&nbsp;&nbsp;North Allegheny School District’s Project Water is an initiative originally launched by the National Junior Honors Society in 2014 to provide clean water to developing villages in Africa. 
+									Since then, it has become an independent organization designed to support identified needs of these villages around the world. To date, over have been raised through our fundraising efforts. With support from our community, teachers, and peers, we know that united we will be able to make a difference.
         </p>
     </article>
     <div class="aboutImage">
@@ -14,6 +15,9 @@
             </div>
             <div class="col-md-6 sponsorCol">
                 <a class="thumbnail down"><img src="img/World_Vision_Logo.png"></a>
+            </div>
+            <div class="col-md-6 sponsorCol">
+                <a class="thumbnail down"><img src="img/Envision_Logo.png"></a>
             </div>
         </div>
     </div>

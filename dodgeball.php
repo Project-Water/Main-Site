@@ -25,7 +25,7 @@
             <p>The <strong>2017 NA Dodgeball Tournament</strong> is scheduled for all school day at NAI and NASH on <strong>April 13th, 2017,</strong> the day before spring break.
                 As part of this tournament, ALL NAI and NASH participants will have <strong>Evening Championships</strong> at NASH, from <strong>7-10 PM.</strong>
                 The cost is <strong>$30/player,</strong> and includes a t-shirt, pizza, all-day tournament admission, and evening championship for all players.
-                During registration, teams can select the <strong>Pizza Supreme</strong> package. For <strong>$5/player more</strong>, your entire team can have pop and double pizza on game day.</p>
+                During registration, teams can select the <strong>PIZZA SUPREME</strong> package. For <strong>$5/player more</strong>, your entire team can have pop and double pizza on game day.</p>
 
         <!--<p>Download parent signature form <a href="pdf/ParentSignatureForm.pdf" target="_blank">here</a>.
     </p>-->
