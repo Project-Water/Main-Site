@@ -1,7 +1,7 @@
 function createCounter() {
 
     $('.countDownNASH').countdown({
-        date: "February 20, 2017 8:00:00",
+        date: "February 20, 2017 8:10:00",
         render: function (data) {
 
             var el = $(this.el);
