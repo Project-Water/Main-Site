@@ -1,7 +1,7 @@
 function createCounter() {
 
     $('.countDownNASH').countdown({
-        date: "February 20, 2017 8:10:00",
+        date: "April 13, 2017 7:30:00",
         render: function (data) {
 
             var el = $(this.el);
@@ -12,9 +12,9 @@ function createCounter() {
                 .append(this.leadingZeros(data.sec, 1) + "&nbsp;secs");
         },
         onEnd: function () {
-            $(".countDownNASH").css("display", "none");
+            /*$(".countDownNASH").css("display", "none");
             $(".registerButtonNASH").css("display", "block");
-            $(".countDownTitle").css("display", "none");
+            $(".countDownTitle").css("display", "none");*/
         }
     });
 }

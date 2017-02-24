@@ -3,7 +3,7 @@
 <hr>
 <h2 class="subPageTitle">2017</h2>
 <div class="countDownContainer">
-    <h2 class="countDownTitle">REGISTER IN</h2>
+    <h2 class="countDownTitle">GET READY TO PLAY IN</h2>
     <div class="countDownNASH">
     </div>
     <div class='donateButton donateButtonInverted registerButtonNASH'>
