@@ -22,6 +22,7 @@ $teams = array(
 			"Margo Weller" => "weller_margo.jpg",
 			"MJ Barton" => 1045293290,
 			"Owen Leonard" => "photo_template.jpg",
+			"Sean Bartholomew" => "bartholomew_sean.jpg",
 			"Zach Shuckrow" => "shuckrow_zack.jpg"
 		),
         "NAI Leadership Team" => array(
