@@ -19,9 +19,6 @@
     </div>
     <br>
     <article class="dodgeBallArtic>le">
-        <p>Check back here on <strong>Monday, February 20th at 8:10 AM</strong> to register your team for the 2017 NA Dodgeball Tournament.
-            Teams must have 6 players and can have one additional (optional) coach/sub.</p>
-
             <p>The <strong>2017 NA Dodgeball Tournament</strong> is scheduled for all school day at NAI and NASH on <strong>April 13th, 2017,</strong> the day before spring break.
                 As part of this tournament, ALL NAI and NASH participants will have <strong>Evening Championships</strong> at NASH, from <strong>7-10 PM.</strong>
                 The cost is <strong>$30/player,</strong> and includes a t-shirt, pizza, all-day tournament admission, and evening championship for all players.
