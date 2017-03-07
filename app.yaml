@@ -112,6 +112,9 @@ handlers:
 - url: /login
   script: login.php
 
+- url: /leadershipcounsel
+  script: leadershipcounsel.php
+
 - url: /
   script: index.php
 
