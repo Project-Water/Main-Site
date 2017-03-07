@@ -1,7 +1,7 @@
 <?php include 'template-upper.php'; ?>
     <h1 class="subPageTitle">2017 Global Leadership Counsel</h1>
     <hr>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This year, a select group of student representatives have been chosen as part of the 2017 Project Water Global Leadership Counsel. Students selected are recognized their qualities of leadership, patriotism, scholarship, service, courage, and honor. These leaders were selected based on current service projects, along with an application essay and interview with the Project Water Global Leadership Committee. Every year, representatives meet for a special ceremony and attend Project Water's annual fundraiser sporting event. This year's event is scheduled for April 13, 2017 at North Allegheny High School.</p><br>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This year, a select group of student representatives have been chosen as part of the 2017 Project Water Global Leadership Counsel. Students selected are recognized for their qualities of leadership, patriotism, scholarship, service, courage, and honor. These leaders were selected based on current service projects, along with an application essay and interview with the Project Water Global Leadership Committee. Every year, representatives meet for a special ceremony and attend Project Water's annual fundraiser sporting event. This year's event is scheduled for April 13, 2017 at North Allegheny High School.</p><br>
     <div class="text-center">
         <h4>Leadership Team Representatives:</h4>
 
