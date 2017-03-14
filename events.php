@@ -3,11 +3,11 @@
 <hr>
 <article class="subPageArticle registerArticle">
     <p>
-        <h2 class="subPageTitle">NA Project Water Special Event</h2>
+        <h2 class="subPageTitle">NA Dodgeball Tournament 2017</h2>
         <img src="img/ball.svg" alt="NJHS Dodgeball tournament" class="ballSVG">
         <br>
         <article class="dodgeBallArticle">
-            Please visit us in the NASH auditorium on April 13th, 2017, during <b>homeroom</b> for a special dodgeball announcement. 
+            For more information, click <a href="dodgeball"> here </a>.
         </article> 
     </p><!--
     <br>
