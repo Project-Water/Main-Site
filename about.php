@@ -16,9 +16,6 @@
             <div class="col-md-6 sponsorCol">
                 <a class="thumbnail down"><img src="img/World_Vision_Logo.png"></a>
             </div>
-            <div class="col-md-6 sponsorCol">
-                <a class="thumbnail down"><img src="img/Envision_Logo.png"></a>
-            </div>
         </div>
     </div>
     <aside class="subPageArticle" style="text-align:left;">
