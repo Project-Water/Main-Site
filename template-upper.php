@@ -77,7 +77,7 @@ if($_SERVER[ 'REQUEST_URI']=="/"){
                     </li>
                     <li><a href="/videos" <?php if($_SERVER[ 'REQUEST_URI']=="/videos" ){echo 'class="active"';} ?>>VIDEOS</a>
                     </li>
-                    <li id="navBreak"><a href="/dodgeball" <?php if($_SERVER[ 'REQUEST_URI']=="/dodgeball" ){echo 'class="active"';} ?>>DODGEBALL</a>
+                    <li id="navBreak"><a href="https://nadodgeball.com" <?php if($_SERVER[ 'REQUEST_URI']=="/dodgeball" ){echo 'class="active"';} ?>>DODGEBALL</a>
                     </li>
                     <li><a href="/donate" <?php if($_SERVER[ 'REQUEST_URI']=="/donate" ){echo 'class="active"';} ?>>DONATE</a>
                     </li>
