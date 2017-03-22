@@ -25,7 +25,7 @@
 <script type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 <?php if($_SERVER[ 'REQUEST_URI']=="/administrators" ){echo '<script>$(function () { $(\'[data-toggle="tooltip"]\').tooltip()});</script>';} ?>
 <?php if($_SERVER[ 'REQUEST_URI']=="/index" || $_SERVER[ 'REQUEST_URI']=="/" ){echo '<script src="/js/main.js" async></script>';} ?>
-<?php if($_SERVER[ 'REQUEST_URI']=="/dodgeball" ){echo '<script src="/js/jquery.countdown.min.js"></script>';echo '<script src="/js/counter.js"></script>';} ?>
+<?php if($_SERVER[ 'REQUEST_URI']=="/events" ){echo '<script src="/js/jquery.countdown.min.js"></script>';echo '<script src="/js/counter.js"></script>';} ?>
 <?php if($_SERVER[ 'REQUEST_URI']=="/about" ){echo '<script src="/js/about.js" async></script>';} ?>
 <?php if($_SERVER[ 'REQUEST_URI']=="/admin/tournaments" ){echo '<script src="/js/jquery.datetimepicker.full.min.js"></script><script src="/ckeditor/ckeditor.js"></script><script src="/js/tournaments.js"></script>';} ?>
 <?php if($_SERVER[ 'REQUEST_URI']=="/admin/events" ){echo '<script src="/js/jquery.datetimepicker.full.min.js"></script><script src="/js/eventeditor.js"></script>';} ?>

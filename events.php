@@ -1,9 +1,9 @@
 
 
 <?php include 'template-upper.php'; ?>
-<h1 class="subPageTitle">NA Dodgeball Tournaments</h1>
+<h1 class="subPageTitle">Events</h1>
 <hr>
-<h2 class="subPageTitle">2017</h2>
+<h2 class="subPageTitle">NA Dodgeball Tournaments 2017</h2>
 <div class="countDownContainer">
     <h2 class="countDownTitle">GET READY TO PLAY IN</h2>
     <div class="countDownNASH">
