@@ -109,7 +109,7 @@ handlers:
 - url: /login
   script: login.php
 
-- url: /leadershipcounsel
+- url: /leadershipcouncil
   script: leadershipcounsel.php
 
 - url: /
