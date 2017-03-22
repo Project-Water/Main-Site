@@ -26,7 +26,7 @@
         <h5>Allegheny County</h5>
         Zachary Hanson<br>
         Thomas Rice<br>
-        Maddie Jones
+        Maddy Jones
         <br>
     </div>
     <?php include 'template-lower.php'; ?>
