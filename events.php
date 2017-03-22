@@ -26,8 +26,7 @@
                 The cost is <strong>$30/player,</strong> and includes a t-shirt, pizza, all-day tournament admission, and evening championship for all players.
                 During registration, teams can select the <strong>PIZZA SUPREME</strong> package. For <strong>$5/player more</strong>, your entire team can have pop and double pizza on game day.</p>
 
-                <p>Click <a href="https://naidodgeball.com/pay">here</a> for NAI's payment info and <a href="https://nashdodgeball.com/pay">here</a> for NASH's payment info.</p>
-                <p>Click <a href="http://naidodgeball.com/ap">here</a> for AP Pre-Registration rescheduling information</p>
+                <p class="text-center">Click <a href="https://nadodgeball.com/">here</a> for more information</p>
 
         <!--<p>Download parent signature form <a href="pdf/ParentSignatureForm.pdf" target="_blank">here</a>.
     </p>-->
