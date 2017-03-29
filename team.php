@@ -165,8 +165,10 @@ foreach($teams as $year=>$yearTeams){
             }
         }
         if(!$lastDidEnd){
+			if($teamName === 'PW Players Union'){
 			echo "Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater";
 		    echo "<hr>";
+			}
             echo '</div>';
 		}
         $counter = 0;
