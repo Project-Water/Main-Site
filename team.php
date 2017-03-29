@@ -35,7 +35,7 @@ $teams = array(
             "Grace Walsh" => "photo_template.jpg",
             "RJ Swanson" => "photo_template.jpg",
             "Olivia Cress" => "photo_template.jpg",
-            "Morgan Mcconellel" => "photo_template.jpg",
+            "Morgan McConnell" => "photo_template.jpg",
             "Luke Turkovich" => "luke.jpg"
         ),
 		"PW Players Union" => array()
