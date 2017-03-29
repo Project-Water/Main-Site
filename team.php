@@ -164,17 +164,18 @@ foreach($teams as $year=>$yearTeams){
                 $lastDidEnd = true;
             }
         }
-        if(!$lastDidEnd)
+        if(!$lastDidEnd){
+			echo "Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater";
+		    echo "<hr>";
             echo '</div>';
+		}
         $counter = 0;
     }
 	
-	echo "Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater";
-	
-    echo "<hr>";
+
 	
     echo '<h3 class="text-center">See Past Years\' Teams</h3>';
-    echo '<div class="donateButton"><a href="allteams" target="_blank"><div class="donateButtonText">ALL TEAMS</div></a></div>';
+    echo '<div class="donateButton"><a href="allteams" target="_blank"><div class="donateButtonText">ALL TEAMS</div></a></div><br>';
 	
 }
 
