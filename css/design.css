@@ -958,6 +958,11 @@ a.thumbnail:hover {
     }
 }
 
+.g-recaptcha>div{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .g-recaptcha div div {
     margin-left: auto;
     margin-right: auto;

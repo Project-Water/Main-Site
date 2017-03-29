@@ -26,14 +26,17 @@ $teams = array(
 			"Zach Shuckrow" => "shuckrow_zack.jpg"
 		),
         "NAI Leadership Team" => array(
-            "Andrew Ziegler" => "photo_template.jpg",
+            "Andrew Ziegler" => "andrew_ziegler.jpg",
             "Zach Trdinich" => "photo_template.jpg",
-            "Jack Leupenzenski" => "photo_template.jpg",
+            "Emmett Gwaltney" => "photo_template.jpg",
             "Christopher Lee" => "photo_template.jpg",
             "John Ehling" => "photo_template.jpg",
             "Kristen Chomos" => 1066521937,
             "Grace Walsh" => "photo_template.jpg",
-            "RJ Swanson" => "photo_template.jpg"
+            "RJ Swanson" => "photo_template.jpg",
+            "Olivia Cress" => "photo_template.jpg",
+            "Morgan Mcconellel" => "photo_template.jpg",
+            "Luke Turkovich" => "luke.jpg"
         ),
 		"PW Players Union" => array()
 			
@@ -135,7 +138,7 @@ $lastDidEnd = false;
 foreach($teams as $year=>$yearTeams){
     echo "<h2 style='text-align:center;text-decoration:underline'>" . $year . "</h2>";
     foreach($yearTeams as $teamName=>$people) {
-		echo "<br></br>";
+		echo "<br><br>";
         echo "<h3 style='text-align:center;'>" . $teamName . "</h3>";
         foreach($people as $name=>$id){
             if($counter == 0){

@@ -5,7 +5,7 @@
     <article class="subPageArticle">
         <p>
             &nbsp;&nbsp;&nbsp;&nbsp;North Allegheny School District’s Project Water is an initiative originally launched by the National Junior Honors Society in 2014 to provide clean water to developing villages in Africa. 
-									Since then, it has become an independent organization designed to support identified needs of these villages around the world. To date, over have been raised through our fundraising efforts. With support from our community, teachers, and peers, we know that united we will be able to make a difference.
+									Since then, it has become an independent organization designed to support identified needs of these villages around the world. To date, over <span id="amountRaised"></span> have been raised through our fundraising efforts. With support from our community, teachers, and peers, we know that united we will be able to make a difference.
         </p>
     </article>
     <div class="aboutImage">
@@ -18,11 +18,8 @@
             </div>
         </div>
     </div>
-    <aside class="subPageArticle" style="text-align:left;">
-        <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Please Note: NA Project Water is no longer affiliated with NJHS due to a technical charter information update provided by the NASSP. NA Project Water will continue to run how it has in the past. <a href="http://www.northallegheny.org/site/default.aspx?PageType=3&DomainID=1077&ModuleInstanceID=4173&ViewID=047E6BE3-6D87-4130-8424-D8E4E9ED6C2A&RenderLoc=0&FlexDataID=36308&PageID=6397">Click here for more information.</a> World Vision and the World Vision logo are licensed trademarks of World Vision - <a href="http://www.worldvision.org/about-us/press-center/world-visions-logo-and-link-agreement#sthash.VRwwa6as.dpuf">Click here for more information.</a>
-        </p>
-    </aside>
+    
+    <div class="donateButton" style="width: 14em;"><a href="team" target="_self"><div class="donateButtonText">MEET OUR TEAM</div></a></div>
 	
 <hr>
 <h2 class="videoDescription">Introducing Project Water</h2>
@@ -31,7 +28,15 @@
 </div>
 
 	<br>
-	<div class="donateButton"><a href="team" target="_self"><div class="donateButtonText">OUR TEAM</div></a></div>
-	<hr>
+	
+	
+
+    <aside class="subPageArticle" style="text-align:left;">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Please Note: NA Project Water is no longer affiliated with NJHS due to a technical charter information update provided by the NASSP. NA Project Water will continue to run how it has in the past. World Vision and the World Vision logo are licensed trademarks of World Vision.
+        </p>
+    </aside>
+
+
 
 <?php include 'template-lower.php'; ?>
