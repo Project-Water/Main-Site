@@ -69,9 +69,7 @@ handlers:
 - url: /parentaddemail
   script: parentaddemail.php
   
-- url: /teamsetup
-  script: teamsetup.php
-  login: admin
+
   
 - url: /projectorapi
   script: projectorapi.php
@@ -105,6 +103,9 @@ handlers:
   
 - url: /admin/events
   script: eventeditor.php
+
+- url: /admin/teamsetup
+  script: teamsetup.php
   
 - url: /login
   script: login.php

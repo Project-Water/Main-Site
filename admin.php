@@ -5,7 +5,7 @@
 
 <div class="row">
     <a href="/admin/administrators" data-no-instant><div class="col-md-6"><div>Administrators</div></div></a>
-    <a href="/admin/tournaments" data-no-instant><div class="col-md-6"><div>Tournaments</div></div></a>
+    <a href="/admin/teamsetup" data-no-instant><div class="col-md-6"><div>Schedule</div></div></a>
 </div>
 <div class="row">
     <a href="/admin/videos" data-no-instant><div class="col-md-4"><div>Videos</div></div></a>
