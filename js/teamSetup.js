@@ -265,6 +265,28 @@
     		alert("You stupid idiot, a team can't face themselves");
     		return;
     	}
+    	if(!time.replace(/\s/g, '').length || time == ""){
+			alert("Schedules rely on something called time. Somehow you're dumb enough to have forgotten the time field. How do you feel now?");
+    		return;
+    	}
+    	if(time.replace(new RegExp('^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$'), '').length){
+    		alert("You incompetent oaf, how do you manage to type in a time incorrectly? It's literally just HH:MM, how complicated is that?!");
+    		return;
+    	}
+    	time += " " + $("#ampmSelector").val();
+
+    	if(!team.replace(/\s/g, '').length || team == ""){
+    		alert("Hey dingus, you need to actually assign the team a name");
+    		return;
+    	}
+    	if(!competitor.replace(/\s/g, '').length || competitor == ""){
+    		alert("Yes, this makes sense. A team can just play against no one.");
+    		return;
+    	}
+    	if(!location.replace(/\s/g, '').length || location == ""){
+    		alert("Nah, this team doesn't actually need to know where to play. How about we just put them on Mars or somewhere in Timbuktu");
+    		return;
+    	}
 
     	data.push({
     		team: team,

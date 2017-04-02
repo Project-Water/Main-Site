@@ -32,7 +32,7 @@ include 'template-upper.php';
             Team:<br>
             <select id="teamSelect"><option value="Other">Other</option></select><input type="text" id="teamOther" placeholder="Other" style="display: none"><br>
             Time:<br>
-            <input type="text" name="timeField" id="timeField"><br>
+            <input type="text" name="timeField" id="timeField"><select id="ampmSelector"><option value="AM">AM</option><option value="PM">PM</option></select><br>
             Competitor:<br>
             <select id="competitorSelect"><option value="Other">Other</option></select> <input type="text" id="competitorOther" placeholder="Other" style="display: none"><br>
             Location:<br>
