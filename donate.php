@@ -12,7 +12,7 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;Are you a local business looking to sponsor Project Water? Check out our sponsors page <a href="sponsors">here</a>.
 			</p>
 			<br>
-			<div class="donateButton"><a href="https://mycause.worldvision.org/index.cfm?fuseaction=donate.event&eventID=1144" target="_blank"><div class="donateButtonText">DONATE</div></a></div>
+			<div class="donateButton"><a href="https://mycause.worldvision.org/index.cfm?fuseaction=donate.event&eventID=1146" target="_blank"><div class="donateButtonText">DONATE</div></a></div>
 			<br>
 		</article>
 	</div>

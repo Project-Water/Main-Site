@@ -123,6 +123,7 @@
     }
 
 
+
     function writeUserData() {
 
     	if(confirm('Are you sure you want to prefill? All previous tournament details will be overwritten')){
@@ -166,13 +167,15 @@
     		setTimeout(function() { defer(method) }, 50);
     }
 
+    var data;
+
     function updateTable(snapshot){
     	var tableData = "";
     	var teamNameString = "";
     	var locationsString = "";
     	var teamNames = new StringSet();
     	var locations = new StringSet();
-    	var data = snapshot.val();
+    	data = snapshot.val();
     	console.log(data);
     	for(var i = 0; i < data.length; i++){
     		tableData += "<tr>";
@@ -182,7 +185,7 @@
     		tableData += `<td>${data[i]["location"]}</td>`;
     		tableData += `<td>${data[i]["id"]}</td>`;
     		tableData += `<td><button type="button" class="btn btn-primary">Edit</button></td>`;
-    		tableData += `<td><button type="button" class="btn btn-danger">Delete</button></td>`;
+    		tableData += `<td><button type="button" class="btn btn-danger" onclick="deleteTeam('${data[i]["id"]}')">Delete</button></td>`;
     		tableData += "</tr>";
 
     		teamNames.add(data[i]["team"]);
@@ -190,13 +193,13 @@
     		locations.add(data[i]["location"]);
     	}
     	for(var i = 0; i < teamNames.values().length; i++){
-    		teamNameString += `<option>${teamNames.values()[i]}</option>`;
+    		teamNameString += `<option value="${teamNames.values()[i]}">${teamNames.values()[i]}</option>`;
     	}
     	for(var i = 0; i < locations.values().length; i++){
-    		locationsString += `<option>${locations.values()[i]}</option>`;
+    		locationsString += `<option value="${locations.values()[i]}">${locations.values()[i]}</option>`;
     	}
-    	teamNameString += "<option>Other</option>";
-    	locationsString += "<option>Other</option>";
+    	teamNameString += '<option value="Other">Other</option>';
+    	locationsString += '<option value="Other">Other</option>';
 
     	$("#teamSelect").html(teamNameString);
     	$("#competitorSelect").html(teamNameString);
@@ -206,16 +209,86 @@
     }
 
     defer(function () {
+
+    	$("#teamSelect").on('change', function() {
+    		if(this.value == "Other")
+    			$("#teamOther").css('display', 'inline');
+    		else
+    			$("#teamOther").css('display', 'none');
+    	});
+    	$("#competitorSelect").on('change', function() {
+    		if(this.value == "Other")
+    			$("#competitorOther").css('display', 'inline');
+    		else
+    			$("#competitorOther").css('display', 'none');
+    	});
+    	$("#locationSelect").on('change', function() {
+    		if(this.value == "Other")
+    			$("#locationOther").css('display', 'inline');
+    		else
+    			$("#locationOther").css('display', 'none');
+    	});
+
     	var tableData = firebase.database().ref('/schedule/');
     	tableData.on('value', function(snapshot) {
     		updateTable(snapshot);
     	});
 
-
     	return firebase.database().ref('/schedule/').once('value').then(function(snapshot) {
     		updateTable(snapshot);
     	});
     });
+
+    function addTeam(){
+    	var team = $("#teamSelect").val();
+    	if(team == "Other")
+    		team = $("#teamOther").val();
+    	var time = $("#timeField").val();
+    	var location = $("#locationSelect").val();
+    	if(location == "Other")
+    		location = $("#teamOther").val();
+    	var competitor = $("#competitorSelect").val();
+    	if(competitor == "Other")
+    		competitor = $("#competitorOther").val();
+
+
+    	if(competitor == team){
+    		alert("You stupid idiot, a team can't face themselves");
+    		return;
+    	}
+
+    	data.push({
+    		team: team,
+    		time: time,
+    		competitor: competitor,
+    		location: location,
+    		id: guid()
+    	})
+    	firebase.database().ref('/schedule/').update(data);
+    	$('#addTeamModal').modal('hide');
+
+    	$("#teamSelect").val("");
+    	$("#timeField").val("");
+    	$("#locationSelect").val("");
+    	$("#competitorSelect").val("");
+    }
+
+    // Array Remove - By John Resig (MIT Licensed)
+    Array.prototype.remove = function(from, to) {
+    	var rest = this.slice((to || from) + 1 || this.length);
+    	this.length = from < 0 ? this.length + from : from;
+    	return this.push.apply(this, rest);
+    };
+    function deleteTeam(id){
+    	var i;
+    	for(i = 0; i < data.length; i++){
+    		if(data[i]['id'] == id){
+    			data.remove(i)
+    			break;
+    		}
+    	}
+    	firebase.database().ref('/schedule/').set(data);
+    }
 
     function presentAddTeamDialogue(){
 

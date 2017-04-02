@@ -12,18 +12,18 @@ include 'template-upper.php';
     <div class="modal-body">
         <form id="addTeamForm">
             Team:<br>
-            <select id="teamSelect"><option>Other</option></select><br>
+            <select id="teamSelect"><option value="Other">Other</option></select><input type="text" id="teamOther" placeholder="Other" style="display: none"><br>
             Time:<br>
-            <input type="text" name="timeField"><br>
+            <input type="text" name="timeField" id="timeField"><br>
             Competitor:<br>
-            <select id="competitorSelect"><option>Other</option></select><br>
+            <select id="competitorSelect"><option value="Other">Other</option></select> <input type="text" id="competitorOther" placeholder="Other" style="display: none"><br>
             Location:<br>
-            <select id="locationSelect"><option>Other</option></select><br>
+            <select id="locationSelect"><option value="Other">Other</option></select><input type="text" id="locationOther" placeholder="Other" style="display: none"><br>
         </form>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary">Add Team</button>
+        <button type="button" class="btn btn-primary" onclick="addTeam()">Add Team</button>
     </div>
 </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
