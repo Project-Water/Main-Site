@@ -1,5 +1,3 @@
-
-
 <?php include 'template-upper.php'; ?>
 <h1 class="subPageTitle">Events</h1>
 <hr>

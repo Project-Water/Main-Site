@@ -122,6 +122,7 @@
     	};
     }
 
+    var school = "NASH";
 
 
     function writeUserData() {
@@ -146,7 +147,7 @@
     						id: guid()
     					})
     				}
-    				firebase.database().ref('schedule/').set(databaseArray);
+    				firebase.database().ref('schedule/' + school).set(databaseArray);
     			};
     			reader.readAsBinaryString(file.files[0]);
     		}
@@ -176,30 +177,38 @@
     	var teamNames = new StringSet();
     	var locations = new StringSet();
     	data = snapshot.val();
-    	console.log(data);
-    	for(var i = 0; i < data.length; i++){
-    		tableData += "<tr>";
-    		tableData += `<td>${data[i]["team"]}</td>`;
-    		tableData += `<td>${data[i]["time"]}</td>`;
-    		tableData += `<td>${data[i]["competitor"]}</td>`;
-    		tableData += `<td>${data[i]["location"]}</td>`;
-    		tableData += `<td>${data[i]["id"]}</td>`;
-    		tableData += `<td><button type="button" class="btn btn-primary">Edit</button></td>`;
-    		tableData += `<td><button type="button" class="btn btn-danger" onclick="deleteTeam('${data[i]["id"]}')">Delete</button></td>`;
-    		tableData += "</tr>";
+    	if(data != null){
+    		for(var i = 0; i < data.length; i++){
+    			tableData += "<tr>";
+    			tableData += `<td>${data[i]["team"]}</td>`;
+    			tableData += `<td>${data[i]["time"]}</td>`;
+    			tableData += `<td>${data[i]["competitor"]}</td>`;
+    			tableData += `<td>${data[i]["location"]}</td>`;
+    			tableData += `<td>${data[i]["id"]}</td>`;
+    			tableData += `<td><button type="button" class="btn btn-primary">Edit</button></td>`;
+    			tableData += `<td><button type="button" class="btn btn-danger" onclick="deleteTeam('${data[i]["id"]}')">Delete</button></td>`;
+    			tableData += "</tr>";
 
-    		teamNames.add(data[i]["team"]);
-    		teamNames.add(data[i]["competitor"]);
-    		locations.add(data[i]["location"]);
-    	}
-    	for(var i = 0; i < teamNames.values().length; i++){
-    		teamNameString += `<option value="${teamNames.values()[i]}">${teamNames.values()[i]}</option>`;
-    	}
-    	for(var i = 0; i < locations.values().length; i++){
-    		locationsString += `<option value="${locations.values()[i]}">${locations.values()[i]}</option>`;
+    			teamNames.add(data[i]["team"]);
+    			teamNames.add(data[i]["competitor"]);
+    			locations.add(data[i]["location"]);
+    		}
+    		for(var i = 0; i < teamNames.values().length; i++){
+    			teamNameString += `<option value="${teamNames.values()[i]}">${teamNames.values()[i]}</option>`;
+    		}
+    		for(var i = 0; i < locations.values().length; i++){
+    			locationsString += `<option value="${locations.values()[i]}">${locations.values()[i]}</option>`;
+    		}
     	}
     	teamNameString += '<option value="Other">Other</option>';
     	locationsString += '<option value="Other">Other</option>';
+
+    	console.log("update");
+    	if(snapshot == null || snapshot.val() == null){
+    		tableData = "";
+    		teamNameString = '<option value="Other">Other</option>';
+    		locationsString = '<option value="Other">Other</option>';
+    	}
 
     	$("#teamSelect").html(teamNameString);
     	$("#competitorSelect").html(teamNameString);
@@ -229,12 +238,12 @@
     			$("#locationOther").css('display', 'none');
     	});
 
-    	var tableData = firebase.database().ref('/schedule/');
+    	var tableData = firebase.database().ref('/schedule/'  + school);
     	tableData.on('value', function(snapshot) {
     		updateTable(snapshot);
     	});
 
-    	return firebase.database().ref('/schedule/').once('value').then(function(snapshot) {
+    	return firebase.database().ref('/schedule/' + school).once('value').then(function(snapshot) {
     		updateTable(snapshot);
     	});
     });
@@ -264,7 +273,7 @@
     		location: location,
     		id: guid()
     	})
-    	firebase.database().ref('/schedule/').update(data);
+    	firebase.database().ref('/schedule/' + school).update(data);
     	$('#addTeamModal').modal('hide');
 
     	$("#teamSelect").val("");
@@ -287,7 +296,34 @@
     			break;
     		}
     	}
-    	firebase.database().ref('/schedule/').set(data);
+    	firebase.database().ref('/schedule/' + school).set(data);
+    }
+
+    function changeSchools(schoolName){
+    	school = schoolName;
+    	if(schoolName == 'NASH'){
+    		$("#naiButton").removeClass('active');
+    		$("#naiButton").removeClass('btn-info');
+    		$("#naiButton").addClass('btn-default');
+
+    		$("#nashButton").addClass('active');
+    		$("#nashButton").addClass('btn-info');
+    		$("#nashButton").removeClass('btn-default');
+    	}
+    	else if(schoolName == 'NAI'){
+    		$("#nashButton").removeClass('active');
+    		$("#nashButton").removeClass('btn-info');
+    		$("#nashButton").addClass('btn-default');
+
+    		$("#naiButton").addClass('active');
+    		$("#naiButton").addClass('btn-info');
+    		$("#naiButton").removeClass('btn-default');
+    	}
+    	return firebase.database().ref('/schedule/' + school).once('value').then(function(snapshot) {
+    		updateTable(snapshot);
+    	}).catch(function(error) {
+    		updateTable(null);
+    	});
     }
 
     function presentAddTeamDialogue(){

@@ -2,6 +2,24 @@
 include 'checklogged.php';
 include 'template-upper.php';
 ?>
+<style>
+    /* a wrapper for the paginatior */
+    .btn-group-wrap {
+        text-align: center;
+    }
+
+    div.btn-group {
+        margin: 0 auto; 
+        text-align: center;
+        width: inherit;
+        display: inline-block;
+    }
+
+    a {
+        float: left;   
+    }
+
+</style>
 <div class="modal fade" tabindex="-1" role="dialog" id="addTeamModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -29,8 +47,16 @@ include 'template-upper.php';
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
-<table border="1" style="border-collapse: collapse;width:75%;" id="teamData">
+<br>
+<div class="btn-group-wrap">
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+        <button type="button" class="btn btn-info active" id="nashButton" onclick="changeSchools('NASH')">NASH</button>
+        <button type="button" class="btn btn-default" id="naiButton" onclick="changeSchools('NAI')">NAI</button>
+    </div>
+</div>
+<br>
+<br>
+<table border="1" style="border-collapse: collapse;width:75%;display: block;" id="teamData">
     <thead>
         <tr>
             <td><b>Team</b></td>
