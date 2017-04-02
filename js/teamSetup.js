@@ -255,7 +255,7 @@
     	var time = $("#timeField").val();
     	var location = $("#locationSelect").val();
     	if(location == "Other")
-    		location = $("#teamOther").val();
+    		location = $("#locationOther").val();
     	var competitor = $("#competitorSelect").val();
     	if(competitor == "Other")
     		competitor = $("#competitorOther").val();
