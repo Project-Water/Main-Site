@@ -280,6 +280,9 @@
     	$("#timeField").val("");
     	$("#locationSelect").val("");
     	$("#competitorSelect").val("");
+    	$("#teamOther").val("");
+    	$("#locationOther").val("");
+    	$("#competitorOther").val("");
     }
 
     // Array Remove - By John Resig (MIT Licensed)
