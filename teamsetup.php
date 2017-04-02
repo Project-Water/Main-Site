@@ -50,7 +50,7 @@ include 'template-upper.php';
 <br>
 <div class="btn-group-wrap">
     <div class="btn-group btn-group-lg" role="group" aria-label="...">
-        <button type="button" class="btn btn-info active" id="nashButton" onclick="changeSchools('NASH')">NASH</button>
+        <button type="button" class="btn btn-primary active" id="nashButton" onclick="changeSchools('NASH')">NASH</button>
         <button type="button" class="btn btn-default" id="naiButton" onclick="changeSchools('NAI')">NAI</button>
     </div>
 </div>

@@ -303,20 +303,20 @@
     	school = schoolName;
     	if(schoolName == 'NASH'){
     		$("#naiButton").removeClass('active');
-    		$("#naiButton").removeClass('btn-info');
+    		$("#naiButton").removeClass('btn-primary');
     		$("#naiButton").addClass('btn-default');
 
     		$("#nashButton").addClass('active');
-    		$("#nashButton").addClass('btn-info');
+    		$("#nashButton").addClass('btn-primary');
     		$("#nashButton").removeClass('btn-default');
     	}
     	else if(schoolName == 'NAI'){
     		$("#nashButton").removeClass('active');
-    		$("#nashButton").removeClass('btn-info');
+    		$("#nashButton").removeClass('btn-primary');
     		$("#nashButton").addClass('btn-default');
 
     		$("#naiButton").addClass('active');
-    		$("#naiButton").addClass('btn-info');
+    		$("#naiButton").addClass('btn-primary');
     		$("#naiButton").removeClass('btn-default');
     	}
     	return firebase.database().ref('/schedule/' + school).once('value').then(function(snapshot) {
