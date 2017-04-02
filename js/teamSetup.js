@@ -276,10 +276,10 @@
     	firebase.database().ref('/schedule/' + school).update(data);
     	$('#addTeamModal').modal('hide');
 
-    	$("#teamSelect").val("");
+    	$("#teamSelect").selectedIndex = 0;
     	$("#timeField").val("");
-    	$("#locationSelect").val("");
-    	$("#competitorSelect").val("");
+    	$("#locationSelect").selectedIndex = 0;
+    	$("#competitorSelect").selectedIndex = 0;
     	$("#teamOther").val("");
     	$("#locationOther").val("");
     	$("#competitorOther").val("");
