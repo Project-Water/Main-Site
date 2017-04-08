@@ -32,7 +32,7 @@ include 'template-upper.php';
             Team:<br>
             <select id="teamSelect"><option value="Other">Other</option></select><input type="text" id="teamOther" placeholder="Other" style="display: none"><br>
             Time:<br>
-            <input type="text" name="timeField" id="timeField"><select id="ampmSelector"><option value="AM">AM</option><option value="PM">PM</option></select><br>
+            <input type="text" name="timeField" id="timeField"><br>
             Competitor:<br>
             <select id="competitorSelect"><option value="Other">Other</option></select> <input type="text" id="competitorOther" placeholder="Other" style="display: none"><br>
             Location:<br>
@@ -76,7 +76,7 @@ include 'template-upper.php';
 </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addTeamModal">
+<button type="button" class="btn btn-primary btn-lg" onclick="addTeamButtonPressed()">
   Add Item
 </button>
 
