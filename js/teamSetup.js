@@ -260,7 +260,7 @@
     	if(competitor == "Other")
     		competitor = $("#competitorOther").val();
 
-
+    	//error handling
     	if(competitor == team){
     		alert("You stupid idiot, a team can't face themselves");
     		return;

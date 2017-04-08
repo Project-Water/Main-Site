@@ -56,7 +56,8 @@ include 'template-upper.php';
 </div>
 <br>
 <br>
-<table border="1" style="border-collapse: collapse;width:75%;display: block;" id="teamData">
+<div class="table-responsive">
+<table border="1" style="border-collapse: collapse;width:75%;display: block;" id="teamData" class="table">
     <thead>
         <tr>
             <td><b>Team</b></td>
@@ -72,6 +73,7 @@ include 'template-upper.php';
     </tbody>
 
 </table>
+</div>
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addTeamModal">

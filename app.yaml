@@ -69,8 +69,6 @@ handlers:
 - url: /parentaddemail
   script: parentaddemail.php
   
-
-  
 - url: /projectorapi
   script: projectorapi.php
   
