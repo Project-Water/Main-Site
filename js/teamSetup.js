@@ -159,6 +159,13 @@ function writeUserData() {
     }
 }
 
+function clearDatabase(){
+    if (confirm(`Are you sure you want to clear data for ${school}? All data will be destroyed`)) {
+        var databaseArray = [];
+        firebase.database().ref('schedule/' + school).set(databaseArray);
+    }
+}
+
 
 function defer(method) {
     if (window.jQuery)
@@ -186,7 +193,7 @@ function updateTable(snapshot) {
             tableData += `<td>${data[i]["time"]}</td>`;
             tableData += `<td>${data[i]["competitor"]}</td>`;
             tableData += `<td>${data[i]["location"]}</td>`;
-            tableData += `<td>${data[i]["id"]}</td>`;
+            //tableData += `<td>${data[i]["id"]}</td>`;
             tableData += `<td><button type="button" class="btn btn-primary" onclick="editTeam('${data[i]["id"]}')">Edit</button></td>`;
             tableData += `<td><button type="button" class="btn btn-danger" onclick="deleteTeam('${data[i]["id"]}')">Delete</button></td>`;
             tableData += "</tr>";

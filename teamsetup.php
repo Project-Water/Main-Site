@@ -64,7 +64,6 @@ include 'template-upper.php';
             <td><b>Time</b></td>
             <td><b>Competitor</b></td>
             <td><b>Location</b></td>
-            <td><b>id</b></td>
             <td><b>Edit</b></td>
             <td><b>Delete</b></td>
         </tr>
@@ -87,6 +86,9 @@ include 'template-upper.php';
     <input type="file" name="dataFile" accept=".csv" id="csvFile">
     <button type="button" onclick="writeUserData()">Enter</button>
 </form>
+
+<hr>
+<button type="button" onclick="clearDatabase()">Clear Databse</button>
 
 <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
 <script>
