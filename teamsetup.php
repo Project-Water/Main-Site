@@ -37,6 +37,7 @@ include 'template-upper.php';
             <select id="competitorSelect"><option value="Other">Other</option></select> <input type="text" id="competitorOther" placeholder="Other" style="display: none"><br>
             Location:<br>
             <select id="locationSelect"><option value="Other">Other</option></select><input type="text" id="locationOther" placeholder="Other" style="display: none"><br>
+            Player Names:<br><textarea cols="50" id="playerNames"></textarea>
         </form>
     </div>
     <div class="modal-footer">
@@ -64,6 +65,7 @@ include 'template-upper.php';
             <td><b>Time</b></td>
             <td><b>Competitor</b></td>
             <td><b>Location</b></td>
+            <td><b>Player Names</b></td>
             <td><b>Edit</b></td>
             <td><b>Delete</b></td>
         </tr>

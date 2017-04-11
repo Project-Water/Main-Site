@@ -140,11 +140,15 @@ function writeUserData() {
                 var data = CSVToArray(e.target.result);
                 var databaseArray = [];
                 for (var i = 1; i < data.length; i++) {
+                    var playerNames = "";
+                    if(data[i].length == 5)
+                        playerNames = data[i][4];
                     databaseArray.push({
                         team: data[i][0],
                         time: data[i][1],
                         competitor: data[i][2],
                         location: data[i][3],
+                        playerNames: playerNames,
                         id: guid()
                     })
                 }
@@ -193,6 +197,7 @@ function updateTable(snapshot) {
             tableData += `<td>${data[i]["time"]}</td>`;
             tableData += `<td>${data[i]["competitor"]}</td>`;
             tableData += `<td>${data[i]["location"]}</td>`;
+            tableData += `<td>${data[i]["playerNames"]}</td>`;
             //tableData += `<td>${data[i]["id"]}</td>`;
             tableData += `<td><button type="button" class="btn btn-primary" onclick="editTeam('${data[i]["id"]}')">Edit</button></td>`;
             tableData += `<td><button type="button" class="btn btn-danger" onclick="deleteTeam('${data[i]["id"]}')">Delete</button></td>`;
@@ -269,6 +274,8 @@ function addTeam() {
     if (competitor == "Other")
         competitor = $("#competitorOther").val();
 
+    var players = $("#playerNames").val();
+
     //error handling
     if (competitor == team) {
         alert("You stupid idiot, a team can't face themselves");
@@ -302,7 +309,8 @@ function addTeam() {
             time: time,
             competitor: competitor,
             location: location,
-            id: guid()
+            id: guid(),
+            playerNames: players;
         })
     } else {
         var i;
@@ -314,6 +322,7 @@ function addTeam() {
         data[i]['time'] = time;
         data[i]['competitor'] = competitor;
         data[i]['location'] = location;
+        data[i]['playerNames'] = players;
     }
 
     firebase.database().ref('/schedule/' + school).update(data);
@@ -398,6 +407,7 @@ function presentEditorDialogue() {
         $("#teamOther").val("");
         $("#locationOther").val("");
         $("#competitorOther").val("");
+        $("#playerNames").val(data[i]['playerNames']);
     }
     $('#addTeamModal').modal('show');
 }
