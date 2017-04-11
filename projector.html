@@ -96,13 +96,20 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Enter Code</h4>
+                    <h4 class="modal-title">Choose school and location</h4>
                 </div>
                 <div class="modal-body">
-                    <input type="text" placeholder="Code" id="codeBox">
+                    <select id="schoolPicker">
+                        <option value="School">Pick a school</option>
+                        <option value="NASH">NASH</option>
+                        <option value="NAI">NAI</option>
+                    </select>
+                    <select id="locationPicker" disabled>
+                        <option value="Location">Pick a location</option>
+                    </select>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="testCode()">Connect</button>
+                    <button type="button" class="btn btn-primary" onclick="activate()">Connect</button>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -113,91 +120,20 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js" data-no-instant></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
     <script>
-        var code = "";
-        var debug = false;
-
-        function goFullScreen() {
-            var elem = document.getElementById("bodyElement");
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            } else if (elem.mozRequestFullScreen) {
-                elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) {
-                elem.webkitRequestFullscreen();
-            }
-        }
-
-        function testCode() {
-            code = $("#codeBox").val();
-            $.getJSON("projectorapi?code=" + code, function (data) {
-                if (data.hasOwnProperty("status")) {
-                    alert("Code invalid");
-                    return;
-                } else {
-                    updateDisplay();
-                    setInterval(updateDisplay, 1000);
-                    $('#codeModal').modal('hide');
-                    return;
-                }
-            });
-        }
-
-        function updateDisplay() {
-            $.getJSON("projectorapi?code=" + code, function (data) {
-                if (data.hasOwnProperty("winner") && data["winner"] != "") {
-                    //hide all of the other stuff and show the winner objects
-                    $("#nowPlaying").hide();
-                    $("#courtNum").hide();
-                    $(".subTitle").hide();
-                    $("#nextUp").hide();
-                    $("#nextNextUp").hide();
-                    $("#winnerTitle").show();
-                    $("#winner").show();
-                    $("#winner").text(data["winner"]);
-                }
-                var teams = data["teams"];
-                $("#courtNum").text(data["court"]);
-                for (var i = 0; i < teams.length; i++) {
-                    switch (i) {
-                    case 0:
-                        $("#nowPlaying").text(teams[i]);
-                        break;
-                    case 1:
-                        $("#nextUp").text(teams[i]);
-                        break;
-                    case 2:
-                        $("#nextNextUp").text(teams[i]);
-                        break;
-                    }
-                }
-
-
-                if (teams.length < 3) {
-                    $("#nextNextUp").text("");
-                    if (teams.length < 2) {
-                        $("#nextUp").text("");
-                        if (teams.length < 1)
-                            $("#nowPlaying").text("");
-                    }
-                }
-            })
-        }
-
-
-        $(function () {
-            if (!debug)
-                $('#codeModal').modal('show');
-            else {
-                $("#courtNum").text("Court 1");
-                $("#nowPlaying").text("Team 1");
-                $("#nextUp").text("Team 2");
-                $("#nextNextUp").text("Team 3");
-            }
-        });
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAJqS8YxLjKQcXLeoWdH4rtHEyxdH7lrEU",
+            authDomain: "lunar-caster-87118.firebaseapp.com",
+            databaseURL: "https://lunar-caster-87118.firebaseio.com",
+            projectId: "lunar-caster-87118",
+            storageBucket: "lunar-caster-87118.appspot.com",
+            messagingSenderId: "472703596562"
+        };
+        firebase.initializeApp(config);
     </script>
+    <script src="js/projector.js"></script>
 </body>
 
 </html>
