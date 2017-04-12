@@ -76,25 +76,40 @@ function updateDisplay() {
         if (hour2.charAt(1) == ":")
             hour2 = hour2.substring(0, 1);
 
-        //am or pm
-        if ((hour1 >= 7 && hour1 <= 11 && hour2 >= 7 && hour2 <= 11) || (hour1 >= 12 && hour1 <= 6 && hour2 >= 12 && hour2 <= 16)) {
-            var mins1 = time1.slice(0, -2);
-            var mins2 = time2.slice(0, -2);
+        hour1 = parseInt(hour1);
+        hour2 = parseInt(hour2);
 
-            if (hour1 != hour2)
-                return hour1 - hour2;
-            else
-                return mins1 - mins2;
-        }
-        //hour 1 is am, hour 2 is pm
-        else if (hour1 >= 7 && hour1 <= 11 && hour2 >= 12 && hour2 <= 6) {
-            return 1;
-        }
-        //hour 1 is pm, hour 2 is am
-        else if (hour1 >= 12 && hour1 <= 6 && hour2 >= 7 && hour2 <= 11) {
-            return -1;
-        }
+        var mins1 = parseInt(time1.slice(-2));
+        var mins2 = parseInt(time2.slice(-2));
+
+        var date1 = new Date();
+        var date2 = new Date();
+
+        if(hour1 < 7)
+            date1.setHours(hour1 + 12);
+        else
+            date1.setHours(hour1);
+
+        if(hour2 < 7)
+            date2.setHours(hour2 + 12);
+        else
+            date2.setHours(hour2);
+
+        date1.setMinutes(mins1);
+        date2.setMinutes(mins2);
+
+        return date1 - date2;
     });
+    //remove duplicates
+    for(var i = 0; i < events.length; i++){
+        for(var j = i + 1; j < events.length; j++){
+            if(events[i]['time'] == events[j]['time'] && events[i]['competitor'] == events[j]['team'] && events[i]['team'] == events[j]['competitor']){
+                events.remove(i);
+                break;
+            }
+        }
+    }
+
     //prune back
     var currentTime = new Date();
     for (var i = 0; i < events.length; i++){
@@ -111,12 +126,11 @@ function updateDisplay() {
         else
           newDate.setHours(parseInt(savedHour) + 12);
         newDate.setMinutes(parseInt(savedMin));
-        if(currentTime.getTime() - newDate.getTime() > 5 * 60 * 10000){
+        if(currentTime.getTime() - newDate.getTime() > 5 * 60 * 1000){
             events.remove(i);
             i--;
         }
     }
-    console.log(events);
     for (var i = 0; i < events.length && i < 3; i++) {
         switch (i) {
             case 0:
