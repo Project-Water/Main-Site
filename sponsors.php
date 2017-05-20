@@ -36,6 +36,32 @@ class Sponsor{
 $sponsors = array(
     "2016" => array(
         "Gold" => array(
+            new Sponsor("Graeter's Ice Cream", "http://www.peaceloveandlittledonuts.com", "peace-love-little-donuts.svg"),
+            new Sponsor("Monte Cello's","http://www.montecellos.com/","monte_cello.png")
+        ),
+        "Silver" => array(
+            new Sponsor("Just for Marketing Industries","http://justformarketing.com/","just_for_marketing.png")
+	        new Sponsor("Pennsylvania Financial Group","http://www.pfgpgh.com/","penn_financial_group.png")
+            new Sponsor("Chick-fil-A Ross Park Mall", "http://www.chick-fil-a.com", "Chick-fil-A_Logo.svg"),
+            new Sponsor("Strassburger McKenna Gutnick & Gefsky", "http://www.smgglaw.com/", "Strassburger-Mckenna-Gutnick-Gefsky-Attorneys-at-Law.svg")
+        ),
+        "Bronze" => array(
+            new Sponsor("Brandy Varrati State Farm Insurance Agency", "https://www.statefarm.com/agent/US/PA/Allison-Park/Brandy-Varrati-4CJY24RSVAK","logo-statefarm.png"),
+            new Sponsor("Crossfit City of Bridges", "https://www.crossfitcityofbridges.com/home.html", "crossfit_cob.jpg"),
+            new Sponsor("Dimond Electric", "", ""),
+            new Sponsor("Ditka's Restaurant", "https://www.ditkasrestaurants.com/", "ditkas.png"),
+            new Sponsor("Moe's Southwest Grill", "https://www.moes.com/", "moes.png"),
+            new Sponsor("Peoples Gas", "https://www.peoples-gas.com/", "peoples_gas.gif"),
+            new Sponsor("Pizza Hut", "https://www.pizzahut.com/", "pizza_hut.svg"),
+            new Sponsor("Scoumis Dentistry", "", ""),
+            new Sponsor("Sheetz", "https://www.sheetz.com/", "sheetz_logo.png"),
+            new Sponsor("Speaker of the House Mike Turzai","http://www.repturzai.com/","turzai.svg"),
+            new Sponsor("Total Learning Center", "http://www.totallearningcenter.com","total-learning-center.png"),
+            new Sponsor("Vincent Lighting", "http://www.vls.com/pittsburgh-lighting-office", "vincent.png")
+        )
+    ),
+    "2016" => array(
+        "Gold" => array(
             new Sponsor("Peace Love and Little Donuts", "http://www.peaceloveandlittledonuts.com", "peace-love-little-donuts.svg"),
             new Sponsor("Chick-fil-A Ross Park Mall", "http://www.chick-fil-a.com", "Chick-fil-A_Logo.svg"),
             new Sponsor("Holliday Fenolgio Fowler, L.P.","https://www.hfflp.com/","holliday-fenoglio-fowler.svg"),
