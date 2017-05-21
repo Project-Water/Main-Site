@@ -34,14 +34,14 @@ class Sponsor{
 }
 
 $sponsors = array(
-    "2016" => array(
+    "2017" => array(
         "Gold" => array(
-            new Sponsor("Graeter's Ice Cream", "http://www.peaceloveandlittledonuts.com", "peace-love-little-donuts.svg"),
+            new Sponsor("Graeter's Ice Cream", "https://www.graeters.com/", "graeters.jpg"),
             new Sponsor("Monte Cello's","http://www.montecellos.com/","monte_cello.png")
         ),
         "Silver" => array(
-            new Sponsor("Just for Marketing Industries","http://justformarketing.com/","just_for_marketing.png")
-	        new Sponsor("Pennsylvania Financial Group","http://www.pfgpgh.com/","penn_financial_group.png")
+            new Sponsor("Just for Marketing Industries","http://justformarketing.com/","just_for_marketing.png"),
+	        new Sponsor("Pennsylvania Financial Group","http://www.pfgpgh.com/","penn_financial_group.png"),
             new Sponsor("Chick-fil-A Ross Park Mall", "http://www.chick-fil-a.com", "Chick-fil-A_Logo.svg"),
             new Sponsor("Strassburger McKenna Gutnick & Gefsky", "http://www.smgglaw.com/", "Strassburger-Mckenna-Gutnick-Gefsky-Attorneys-at-Law.svg")
         ),
@@ -57,7 +57,7 @@ $sponsors = array(
             new Sponsor("Sheetz", "https://www.sheetz.com/", "sheetz_logo.png"),
             new Sponsor("Speaker of the House Mike Turzai","http://www.repturzai.com/","turzai.svg"),
             new Sponsor("Total Learning Center", "http://www.totallearningcenter.com","total-learning-center.png"),
-            new Sponsor("Vincent Lighting", "http://www.vls.com/pittsburgh-lighting-office", "vincent.png")
+            new Sponsor("Vincent Lighting", "http://www.vls.com/pittsburgh-lighting-office", "vincent_lighting.png")
         )
     ),
     "2016" => array(
