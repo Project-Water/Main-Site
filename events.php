@@ -1,7 +1,9 @@
 <?php include 'template-upper.php'; ?>
 <h1 class="subPageTitle">Events</h1>
 <hr>
-<h2 class="subPageTitle">NA Dodgeball Tournament 2017</h2>
+<h2 class="subPageTitle">NA Dodgeball Tournament 2018 - TBA</h2>
+
+<!--
 <div class="countDownContainer">
     <h2 class="countDownTitle">GET READY TO PLAY IN</h2>
     <div class="countDownNASH">
@@ -13,7 +15,19 @@
     </div>
 
 </div>
+-->
+
 <br>
+
+<article class="subPageArticle registerArticle">
+    <p>
+        <img src="img/ball.svg" alt="NJHS Dodgeball tournament" class="ballSVG">
+        <br>
+        <article class="dodgeBallArticle">
+            Be sure to follow us on twitter <a href="https://twitter.com/naprojectwater" target="_blank">@naprojectwater</a>  for the latest announcements and updates!
+      </article>
+
+<!--
 <div class="embed-responsive embed-responsive-16by9 dodgeVideo">
     <embed id="video" src="https://www.youtube-nocookie.com/embed/EYeKDpXzaCw?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item">
     </div>
@@ -36,6 +50,9 @@
         </strong>
     </p>-->
         <!--<h3 class="text-center">Spectator Registration</h3>
-        <div class="donateButton"><a href="http://goo.gl/forms/Y8vuiyovqx" target="_blank"><div class="donateButtonText">REGISTER</div></a></div>-->
+        <div class="donateButton"><a href="http://goo.gl/forms/Y8vuiyovqx" target="_blank"><div class="donateButtonText">REGISTER</div></a></div>
+			
     </article>
+	
+-->
     <?php include 'template-lower.php'; ?>
