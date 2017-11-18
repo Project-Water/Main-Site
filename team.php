@@ -9,7 +9,7 @@ $teams = array(
 			"Jack Kenna, Publicity Director" => "kenna.jpg",
 			"Griffin McVay, Mission Director" => "mcvay.jpg",
 			"Margo Weller, Mission Director" => "weller.jpg",
-			"Luke Trueman, Player's Union Leader" => "trueman.jpg"
+			"Luke Trueman, Players' Union Leader" => "trueman.jpg"
 		),
 		"Team Members" => array(
 			"Jess Barry, Mission Team" => "barry.jpg",
@@ -186,5 +186,6 @@ foreach($teams as $year=>$yearTeams){
 }
 
 echo "<center>Special thanks to <a href='http://www.kayceeorwigphotography.com' target='_blank'>Kaycee Orwig</a> for taking our team pics!</center>";
+echo "<center>Check out all of our past year's NA Project Water teams <a href='http://www.naprojectwater.com/allteams'>here!</a></center>";
 include 'template-lower.php'; 
 ?>

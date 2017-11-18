@@ -173,8 +173,40 @@ include 'template-upper.php';
 
     <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>Our Teams</h1>
 
-    <?php
+    
 
+	<center><img src='img/team/team.png'  width='70%'></img></center>
+
+	
+	<h2 style='text-align:center;text-decoration:underline'>2017-2018 Team</h2>
+	<h3 style='text-align:center;'>NASH Team</h3>
+	<center><p>Nikhil Behari, Jack Kenna, Griffin McVay, Margo Weller, Luke Trueman, Jess Barry, Sam Buirge, Ryan Earle, Jenna Edelmann, Naomi Heisstand, Breanna Jones, Christopher Lee, Valerie Malachin, Ritika Nagpal, Jayne Simon, Zach Trdinich, Luke Turkovich, Jon Van Kirk, Jeremiah Zemet</p></center>
+	<h3 style='text-align:center;'>NAI Team</h3>
+	<center><p>Grace Welsh, RJ Swanson, Andrew Baierl, Grace Baierl, Meghna Behari, John Catanzaro, Charlie Deible, Patrick Fenlon, John Galecki, Andrew Johnson, Ana Key, Angelina Lowe, Jake Mellinger, Jacob Pan, Natalie Shoup, Andrew Solman, Lydia Thomas, Rose Timmer, Grace Waldee</p></center>
+	<br>
+	<h2 style='text-align:center;text-decoration:underline'>2016-2017 Team</h2>
+	<h3 style='text-align:center;'>NASH Team</h3>
+	<center><p>Joshua Thomas, Nikhil Behari, Shane Mitnick, Bailey Daftary, Brendan Grzyb, CJ May, Danny Fujito, Griffin McVay, Hannah Glasser, Jack Kenna, Jacob Greco, Julie Chen, Kennedy Urban, Kevin Xu, Margo Weller, MJ Barton, Owen Leonard, Zach Shuckrow</p></center>
+	<h3 style='text-align:center;'>NAI Team</h3>
+	<center><p>Andrew Ziegler, Zach Trdinich, Luke Turkovich, Jack Leupenzenski, Christopher Lee, John Ehling, Kristen Chomos, Grace Walsh, RJ Swanson</p></center>
+	<h3 style='text-align:center;'>Players' Union</h3>
+	<center><p>Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater</p></center>
+	<br>
+	<h2 style='text-align:center;text-decoration:underline'>2015-2016 Team</h2>
+	<h3 style='text-align:center;'>NASH Team</h3>
+	<center><p>Joshua Thomas, MJ Barton, Alex Taffe, Gabe Ren, Bailey Daftary, Brendan Grzyb, Jacob Greco, Kevin Xu, CJ May, Kennedy Urban, Danny Fujito, Eric Ricci, Yara El-Khatib, Dave Bjorklund</p></center>
+	<h3 style='text-align:center;'>NAI Team</h3>
+	<center><p>Nikhil Behari, Hannah Glasser, Griffin McVay, Margo Weller, Zachary Shuckrow</p></center>
+	<h3 style='text-align:center;'>Media Team</h3>
+	<center><p>Alex Taffe, Joshua Thomas, Shane Mitnick, Julie Chen</p></center>
+	<br>
+	<h2 style='text-align:center;text-decoration:underline'>2014-2015 Team</h2>
+	<h3 style='text-align:center;'>NAI Team</h3>
+	<center><p>Dave Bjorklund, Ben Cinker, MJ Barton, Joshua Thomas, Bailey Daftary, Brendan Grzyb, Jacob Greco, Emilie Raymond, Kevin Xu</p></center>
+	<br>
+	<?php?>
+<!--
+	
 $counter = 0;
 $lastDidEnd = false;
 foreach($teams as $year=>$yearTeams){
@@ -211,6 +243,7 @@ foreach($teams as $year=>$yearTeams){
     }
     echo "<hr>";
 }
-
+	-->
+<?php
 include 'template-lower.php'; 
 ?>
