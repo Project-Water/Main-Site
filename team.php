@@ -3,47 +3,61 @@
 //Twitter secret: ***REMOVED***
 
 $teams = array(
-	"" => array(
-		"NASH Leadership Team" => array(
-			"Joshua Thomas" => 1380804866,
-			"Nikhil Behari" => "behari_nikhil.jpg",
-			"Shane Mitnick" => 324719303,
-			"Bailey Daftary" => "daftary_bailey.jpg",
-			"Brendan Grzyb" => "photo_template.jpg",
-			"CJ May" => 2902146421,
-			"Danny Fujito" => 1024988798,
-			"Griffin McVay" => 2576757000,
-			"Hannah Glasser" => 1674638335,
-			"Jack Kenna" => 902832746,
-			"Jacob Greco" => "greco_jacob.jpg",
-			"Julie Chen" => 40125872,
-			"Kennedy Urban" => "urban-kennedy.jpg",
-			"Kevin Xu" => 2332523996,
-			"Margo Weller" => "weller_margo.jpg",
-			"MJ Barton" => 1045293290,
-			"Owen Leonard" => "photo_template.jpg",
-			"Sean Bartholomew" => "bartholomew_sean.jpg",
-			"Zach Shuckrow" => "shuckrow_zack.jpg"
+	"NASH Team" => array(
+		"Team Directors" => array(
+			"Nikhil Behari, Logistics Director" => "behari.jpg",
+			"Jack Kenna, Publicity Director" => "kenna.jpg",
+			"Griffin McVay, Mission Director" => "mcvay.jpg",
+			"Margo Weller, Mission Director" => "weller.jpg",
+			"Luke Trueman, Player's Union Leader" => "trueman.jpg"
 		),
-        "NAI Leadership Team" => array(
-            "Andrew Ziegler" => "andrew_ziegler.jpg",
-            "Zach Trdinich" => "photo_template.jpg",
-            "Emmett Gwaltney" => "photo_template.jpg",
-            "Christopher Lee" => "photo_template.jpg",
-            "John Ehling" => "photo_template.jpg",
-            "Kristen Chomos" => 1066521937,
-            "Grace Walsh" => "photo_template.jpg",
-            "RJ Swanson" => "photo_template.jpg",
-            "Olivia Cress" => "Olivia_Kress.jpeg",
-            "Morgan McConnell" => "photo_template.jpg",
-            "Luke Turkovich" => "luke.jpg",
-            "Zach Eilig" => "zach_eilig.jpeg"
-        ),
-		"PW Players Union" => array()
+		"Team Members" => array(
+			"Jess Barry, Mission Team" => "barry.jpg",
+			"Sam Buirge, Mission Team" => "buirge.jpg",
+			"Ryan Earle, Mission Team" => "earle.jpg",
+			"Jenna Edelmann, Mission Team" => "edelmann.jpg",
+			"Naomi Heisstand, Mission Team" => "heisstand.jpg",
+			"Breanna Jones, Publicity Team" => "jones.jpg",
+			"Christopher Lee, Logistics Team" => "lee.jpg",
+			"Valerie Malachin, Mission Team" => "malachin.jpg",
+			"Ritika Nagpal, Mission Team" => "nagpal.jpg",
+			"Jayne Simon, Mission Team" => "simon.jpg",
+			"Zach Trdinich, Publicity Team" => "trdinich.jpg",
+			"Luke Turkovich, Logistics Team" => "turkovich.jpg",
+			"Jon Van Kirk, Mission Team" => "vankirk.jpg",
+			"Jeremiah Zemet, Mission Team" => "zemet.jpg"
+		)
 			
+	),
+	
+	"NAI Team" => array(
+		"Team Directors" => array(
+			"Grace Welsh, NAI Director" => "",
+			"RJ Swanson, NAI Director" => ""
+		),
+		"Team Members" => array(
+			"Andrew Baierl, Logistics Team" => "",
+			"Grace Baierl, Mission Team" => "",
+			"Meghna Behari, Logistics Team" => "",
+			"John Catanzaro, Logistics Team" => "",
+			"Charlie Deible, Logistics Team" => "",
+			"Patrick Fenlon, Logistics Team" => "",
+			"Josh Galecki, Logistics Team" => "",
+			"Andrew Johnson, Logistics Team" => "",
+			"Ana Key, Logistics Team" => "",
+			"Angelina Lowe, Logistics Team" => "",
+			"Jake Mellinger, Player's Union" => "",
+			"Jacob Pan, Publicity Team" => "",
+			"Natalie Shoup, Player's Union" => "",
+			"Andrew Solman, Logistics Team" => "",
+			"Lydia Thomas, Player's Union" => "",
+			"Rose Timmer, Mission Team" => "",
+			"Grace Waldee, Mission Team" => ""			
+		)
 	)
 );
-$ids = [2757838540, 1636704312, 1045293290, 1380804866, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 1674638335, 2576757000, 324719303, 40125872, 2402095411, 902832746, 1066521937, 2405315112];
+$ids = [2757838540, 1636704312, 1045293290, 1380804866, 2405315112, 601340706, 2332523996, 381211050, 496475347, 2902146421, 1024988798, 2510451658, 2402095411, 1674638335, 2576757000, 324719303, 40125872];
+
 //$twitterResults = performPost("https://api.twitter.com/1.1/users/lookup.json", array("user_id" => implode(",",user_id)));
 
 //url is string, data is array
@@ -130,7 +144,7 @@ function getIDLocation($id){
 include 'template-upper.php';
 ?>
 
-    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>2016-2017 Team</h1>
+    <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>2017-2018 NA Project Water Teams</h1>
 
     <?php
 
@@ -139,7 +153,6 @@ $lastDidEnd = false;
 foreach($teams as $year=>$yearTeams){
     echo "<h2 style='text-align:center;text-decoration:underline'>" . $year . "</h2>";
     foreach($yearTeams as $teamName=>$people) {
-		echo "<br><br>";
         echo "<h3 style='text-align:center;'>" . $teamName . "</h3>";
         foreach($people as $name=>$id){
             if($counter == 0){
@@ -152,8 +165,8 @@ foreach($teams as $year=>$yearTeams){
             if(gettype($id) == "integer" || $intTest != 0)
                 echo str_replace("_normal", "", $twitterResults[getIDLocation($id)]["profile_image_url_https"]);
             else
-                echo 'img/team/' . $id;
-            echo '" style="border-radius:5px;"><div style="margin-top:-15px;">';
+                echo 'img/team/2017_team/' . $id;
+            echo '" style="border-radius:5px;"><div style="margin-top:-23px;">';
             if(gettype($id) == "integer" || $intTest != 0)
                 echo '<a href="https://twitter.com/' . $twitterResults[getIDLocation($id)]["screen_name"] . '">' . $name . '</a>';
             else
@@ -165,25 +178,13 @@ foreach($teams as $year=>$yearTeams){
                 $lastDidEnd = true;
             }
         }
-        if(!$lastDidEnd){
-		
+        if(!$lastDidEnd)
             echo '</div>';
-		}
-		
         $counter = 0;
     }
-	
-	echo "Andrew Turzai, Ben Cinker, Brooke Anderson, Caleb Karsh, Cam Sunseri, CJ Bates, Devin Bluemling, Ethan Maenza, Jack Kairys, Jack Lehew, Jack Barber, Jason Stiefater, Jenna Kolano, Jenna Risacher, Katie Flanders, Katie Walzer, Liam Nobbs, Logan Glace, Maria Cataline, Mark Puntil, Morgan Rutan, Noah Frank, Sam Neal, Sean Atwater";
     echo "<hr>";
-	
-    echo '</div>';
-	
-
-	
-//    echo '<h3 class="text-center">See Past Years\' Teams</h3>';
-//    echo '<div class="donateButton"><a href="allteams" target="_blank"><div class="donateButtonText">ALL TEAMS</div></a></div><br>';
-	
 }
 
+echo "<center>Special thanks to <a href='http://www.kayceeorwigphotography.com' target='_blank'>Kaycee Orwig</a> for taking our team pics!</center>";
 include 'template-lower.php'; 
 ?>
