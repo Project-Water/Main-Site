@@ -204,7 +204,7 @@ include 'template-upper.php';
 	<h3 style='text-align:center;'>NAI Team</h3>
 	<center><p>Dave Bjorklund, Ben Cinker, MJ Barton, Joshua Thomas, Bailey Daftary, Brendan Grzyb, Jacob Greco, Emilie Raymond, Kevin Xu</p></center>
 	<br>
-	<?php?>
+	
 <!--
 	
 $counter = 0;
