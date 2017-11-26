@@ -32,27 +32,30 @@ $teams = array(
 	
 	"NAI Team" => array(
 		"Team Directors" => array(
-			"Grace Welsh, NAI Director" => "",
-			"RJ Swanson, NAI Director" => ""
+			"Grace Welsh, NAI Director" => "welsh.jpg",
+			"RJ Swanson, NAI Director" => "swanson.jpg"
 		),
 		"Team Members" => array(
-			"Andrew Baierl, Logistics Team" => "",
-			"Grace Baierl, Mission Team" => "",
-			"Meghna Behari, Logistics Team" => "",
-			"John Catanzaro, Logistics Team" => "",
-			"Charlie Deible, Logistics Team" => "",
-			"Patrick Fenlon, Logistics Team" => "",
-			"Josh Galecki, Logistics Team" => "",
-			"Andrew Johnson, Logistics Team" => "",
-			"Ana Key, Logistics Team" => "",
-			"Angelina Lowe, Logistics Team" => "",
-			"Jake Mellinger, Players' Union" => "",
-			"Jacob Pan, Publicity Team" => "",
-			"Natalie Shoup, Players' Union" => "",
-			"Andrew Solman, Logistics Team" => "",
-			"Lydia Thomas, Players' Union" => "",
-			"Rose Timmer, Mission Team" => "",
-			"Grace Waldee, Mission Team" => ""			
+			"Andrew Baierl, Logistics Team" => "baierl.jpg",
+			"Grace Baierl, Mission Team" => "baierl_2.jpg",
+			"Meghna Behari, Logistics Team" => "behari_2.jpg",
+			"John Catanzaro, Logistics Team" => "catanzaro.jpg",
+			"Charlie Deible, Logistics Team" => "deible.jpg",
+			"Patrick Fenlon, Logistics Team" => "fenlon.jpg",
+			"Josh Galecki, Logistics Team" => "galecki.jpg",
+			"Andrew Johnson, Logistics Team" => "johnson.jpg",
+			"Vicki Lee, Publicity Team" => "lee_2.jpg",
+			"Ana Key, Logistics Team" => "key.jpg",
+			"Angelina Lowe, Logistics Team" => "lowe.jpg",
+			"Jake Mellinger, Players' Union" => "mellinger.jpg",
+			"Nicholas Palermo, Publicity Team" => "palermo.jpg",
+			"Jacob Pan, Publicity Team" => "pan.jpg",
+			"Caroline Radocaj, Publicity Team" => "radocaj.jpg",
+			"Natalie Shoup, Players' Union" => "shoup.jpg",
+			"Andrew Solman, Logistics Team" => "solman.jpg",
+			"Lydia Thomas, Players' Union" => "thomas.jpg",
+			"Rose Timmer, Mission Team" => "timmer.jpg",
+			"Grace Waldee, Mission Team" => "waldee.jpg"			
 		)
 	)
 );
