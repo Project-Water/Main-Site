@@ -57,7 +57,7 @@ $teams = array(
         "NAI Core Team" => array(
             "Nikhil Behari" => 2402095411,
             "Hannah Glasser" => 1674638335,
-            "Griffin McVay" => 2576757000, 
+            "Griffin McVay" => 2576757000,
             "Margo Weller" => "weller_margo.jpg",
             "Zachary Shuckrow" => "shuckrow_zack.jpg"
         ),
@@ -166,18 +166,19 @@ function getIDLocation($id){
         $count++;
     }
 }
-    
+
 
 include 'template-upper.php';
 ?>
 
     <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>Our Teams</h1>
 
-    
+
 
 	<center><img src='img/team/team.png'  width='70%'></img></center>
+    <h3 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h3>
 
-	
+
 	<h2 style='text-align:center;text-decoration:underline'>2017-2018 Team</h2>
 	<h3 style='text-align:center;'>NASH Team</h3>
 	<center><p>Nikhil Behari, Jack Kenna, Griffin McVay, Margo Weller, Luke Trueman, Jess Barry, Sam Buirge, Ryan Earle, Jenna Edelmann, Naomi Heisstand, Breanna Jones, Christopher Lee, Valerie Malachin, Ritika Nagpal, Jayne Simon, Zach Trdinich, Luke Turkovich, Jon Van Kirk, Jeremiah Zemet</p></center>
@@ -204,9 +205,9 @@ include 'template-upper.php';
 	<h3 style='text-align:center;'>NAI Team</h3>
 	<center><p>Dave Bjorklund, Ben Cinker, MJ Barton, Joshua Thomas, Bailey Daftary, Brendan Grzyb, Jacob Greco, Emilie Raymond, Kevin Xu</p></center>
 	<br>
-	
+
 <!--
-	
+
 $counter = 0;
 $lastDidEnd = false;
 foreach($teams as $year=>$yearTeams){
@@ -245,5 +246,5 @@ foreach($teams as $year=>$yearTeams){
 }
 	-->
 <?php
-include 'template-lower.php'; 
+include 'template-lower.php';
 ?>

@@ -27,9 +27,9 @@ $teams = array(
 			"Jon Van Kirk, Mission Team" => "vankirk.jpg",
 			"Jeremiah Zemet, Mission Team" => "zemet.jpg"
 		)
-			
+
 	),
-	
+
 	"NAI Team" => array(
 		"Team Directors" => array(
 			"Grace Welsh, NAI Director" => "welsh.jpg",
@@ -55,7 +55,7 @@ $teams = array(
 			"Andrew Solman, Logistics Team" => "solman.jpg",
 			"Lydia Thomas, Players' Union" => "thomas.jpg",
 			"Rose Timmer, Mission Team" => "timmer.jpg",
-			"Grace Waldee, Mission Team" => "waldee.jpg"			
+			"Grace Waldee, Mission Team" => "waldee.jpg"
 		)
 	)
 );
@@ -142,12 +142,13 @@ function getIDLocation($id){
         $count++;
     }
 }
-    
+
 
 include 'template-upper.php';
 ?>
 
     <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>2017-2018 NA Project Water Teams</h1>
+    <h3 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h3>
 
     <?php
 
@@ -190,5 +191,5 @@ foreach($teams as $year=>$yearTeams){
 
 echo "<center>Special thanks to <a href='http://www.kayceeorwigphotography.com' target='_blank'>Kaycee Orwig</a> for taking our team pics!</center>";
 echo "<center>Check out all of our past years' NA Project Water teams <a href='http://www.naprojectwater.com/allteams'>here!</a></center>";
-include 'template-lower.php'; 
+include 'template-lower.php';
 ?>
