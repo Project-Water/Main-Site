@@ -176,7 +176,7 @@ include 'template-upper.php';
 
 
 	<center><img src='img/team/team.png'  width='70%'></img></center>
-    <h3 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h3>
+    <h5 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h5>
 
 
 	<h2 style='text-align:center;text-decoration:underline'>2017-2018 Team</h2>

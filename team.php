@@ -148,7 +148,7 @@ include 'template-upper.php';
 ?>
 
     <h1 style='text-align:center;color:#3cf;font-family: HelveticaNeueCondensedBold;'>2017-2018 NA Project Water Teams</h1>
-    <h3 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h3>
+    <h5 style='text-align:center;'>Looking for Project Water Administration? Click <a href="https://projectwater.org/team">here</a>.</h5>
 
     <?php
 
