@@ -310,7 +310,7 @@ function addTeam() {
             competitor: competitor,
             location: location,
             id: guid(),
-            playerNames: players;
+            playerNames: players
         })
     } else {
         var i;

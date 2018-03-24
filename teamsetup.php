@@ -9,14 +9,14 @@ include 'template-upper.php';
     }
 
     div.btn-group {
-        margin: 0 auto; 
+        margin: 0 auto;
         text-align: center;
         width: inherit;
         display: inline-block;
     }
 
     a {
-        float: left;   
+        float: left;
     }
 
 </style>
@@ -90,7 +90,7 @@ include 'template-upper.php';
 </form>
 
 <hr>
-<button type="button" onclick="clearDatabase()">Clear Databse</button>
+<button type="button" onclick="clearDatabase()">Clear Database</button>
 
 <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
 <script>
