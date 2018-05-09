@@ -20,6 +20,7 @@ $redirects = [
   "/contact" => "https://www.projectwater.org/contact/",
   "/credits" => "https://www.projectwater.org",
   "/team" => "https://www.projectwater.org/team/",
+  "/allteams" => "https://www.projectwater.org/team-archive/",
     
 ];
 
