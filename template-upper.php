@@ -1,9 +1,27 @@
 <?php
 header("Link: </css/design.min.css>; rel=preload; as=stylesheet", false);
 header("Link: </css/bootstrap.min.css>; rel=preload; as=stylesheet", false);
-if($_SERVER[ 'REQUEST_URI']=="/"){
-    
+
+function Redirect($url, $permanent = false){
+    header('Location: ' . $url, true, $permanent ? 301 : 302);
+
+    exit();
 }
+
+$redirects = [
+  "/" => "https://www.projectwater.org",
+  "/about" => "https://www.projectwater.org/about",
+];
+
+
+$currentURL = $_SERVER['REQUEST_URI'];
+
+$redirect = $redirects[$currentURL];
+
+if(!is_null($redirect)){
+    Redirect($redirect, true);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -93,5 +111,5 @@ if($_SERVER[ 'REQUEST_URI']=="/"){
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
+
    <?php if($_SERVER[ 'REQUEST_URI']!="/admin/tournaments" ){echo '<div class="container">';} else{echo '<div class="container-fluid tournamentContainer">';}?>
