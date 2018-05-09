@@ -21,6 +21,7 @@ $redirects = [
   "/credits" => "https://www.projectwater.org",
   "/team" => "https://www.projectwater.org/team/",
   "/allteams" => "https://www.projectwater.org/team-archive/",
+  "/login" => "https://accounts.google.com/ServiceLogin/signinchooser?service=ah&passive=true&continue=https%3A%2F%2Fappengine.google.com%2F_ah%2Fconflogin%3Fcontinue%3Dhttp%3A%2F%2Fnaprojectwater.com%2Flogin&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
     
 ];
 
