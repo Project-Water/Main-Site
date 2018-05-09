@@ -10,7 +10,17 @@ function Redirect($url, $permanent = false){
 
 $redirects = [
   "/" => "https://www.projectwater.org",
-  "/about" => "https://www.projectwater.org/about",
+  "/about" => "https://www.projectwater.org/what-we-do/",
+  "/events" => "https://www.projectwater.org/events/",
+  "/videos" => "https://www.projectwater.org/videos/",
+  "/dodgeball" => "https://www.projectwater.org/dodgeball/",
+  "/donate" => "https://www.projectwater.org/donate/",
+  "/sponsors" => "https://www.projectwater.org/sponsors/",  
+  "/parents" => "https://www.projectwater.org/get-involved/",  
+  "/contact" => "https://www.projectwater.org/contact/",
+  "/credits" => "https://www.projectwater.org",
+  "/team" => "https://www.projectwater.org/team/",
+    
 ];
 
 
