@@ -1,4 +1,8 @@
 <?php include 'template-upper.php'; ?>
+
+<?php
+	echo '<meta http-equiv="refresh" content="0;url=https://projectwater.org' . $_SERVER['REQUEST_URI'] . '">';
+?>
 <h1 class="subPageTitle">Error: 404 not found</h1>
 <hr>
 <article class="subPageArticle notFoundArticle">
