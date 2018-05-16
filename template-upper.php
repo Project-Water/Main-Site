@@ -8,6 +8,11 @@ function Redirect($url, $permanent = false){
     exit();
 }
 
+function is_localhost() {
+    $whitelist = array( '127.0.0.1', '::1' );
+    return in_array( $_SERVER['REMOTE_ADDR'], $whitelist);
+}
+
 $redirects = [
   "/" => "https://www.projectwater.org",
   "/about" => "https://www.projectwater.org/what-we-do/",
@@ -15,14 +20,14 @@ $redirects = [
   "/videos" => "https://www.projectwater.org/videos/",
   "/dodgeball" => "https://www.projectwater.org/dodgeball/",
   "/donate" => "https://www.projectwater.org/donate/",
-  "/sponsors" => "https://www.projectwater.org/sponsors/",  
-  "/parents" => "https://www.projectwater.org/get-involved/",  
+  "/sponsors" => "https://www.projectwater.org/sponsors/",
+  "/parents" => "https://www.projectwater.org/get-involved/",
   "/contact" => "https://www.projectwater.org/contact/",
   "/credits" => "https://www.projectwater.org",
   "/team" => "https://www.projectwater.org/team/",
   "/allteams" => "https://www.projectwater.org/team-archive/",
   "/login" => "https://accounts.google.com/ServiceLogin/signinchooser?service=ah&passive=true&continue=https%3A%2F%2Fappengine.google.com%2F_ah%2Fconflogin%3Fcontinue%3Dhttp%3A%2F%2Fnaprojectwater.com%2Flogin&flowName=GlifWebSignIn&flowEntry=ServiceLogin",
-    
+
 ];
 
 
@@ -30,7 +35,7 @@ $currentURL = $_SERVER['REQUEST_URI'];
 
 $redirect = $redirects[$currentURL];
 
-if(!is_null($redirect)){
+if(!is_null($redirect) && !is_localhost()){
     Redirect($redirect, true);
 }
 
