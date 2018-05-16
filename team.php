@@ -79,7 +79,8 @@ function performPost($url,$data,$bearer_token){
 }
 
 function getTwitterFromAPI(){
-    global $ids;
+    global $ids, $twitter_consumer_key, $twitter_secret_key;
+
     $app_key = $twitter_consumer_key;
     $app_token = $twitter_secret_key;
     //These are our constants.
