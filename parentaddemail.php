@@ -2,6 +2,8 @@
 
 //var_dump($_POST);
 
+include_once "api-keys.php";
+
 //url is string, data is array
     function performPost($url, $data){
         // use key 'http' even if you send the request to https://...
@@ -40,7 +42,7 @@ if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 
 
 //get email data ready
-$emailString = "https://api:key-***REMOVED***@api.mailgun.net/v3/naprojectwater.com/messages";
+$emailString = "https://api:key-" . $mailgun_secret_key . "@api.mailgun.net/v3/naprojectwater.com/messages";
 
 $emailMessage = "<div style='color:black'>";
 
